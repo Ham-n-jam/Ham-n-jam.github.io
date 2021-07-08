@@ -1,8 +1,25 @@
 import React from "react";
 import styles from "./MainPage.module.css";
 import Button from "../global/Button";
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function MainPage() {
+
+    const tetrusImages = [
+        {
+            original: `${process.env.PUBLIC_URL + '/images/tetrusGameplay.png'}`,
+            thumbnail: `${process.env.PUBLIC_URL + '/images/tetrusGameplay.png'}`,
+        },
+        {
+            original: `${process.env.PUBLIC_URL + '/images/tetrusMenu.png'}`,
+            thumbnail: `${process.env.PUBLIC_URL + '/images/tetrusMenu.png'}`,
+        },
+        {
+            original: `${process.env.PUBLIC_URL + '/images/tetrusGameOver.png'}`,
+            thumbnail: `${process.env.PUBLIC_URL + '/images/tetrusGameOver.png'}`,
+        },
+    ];
 
     return (
         <div className={styles.body}>
@@ -59,19 +76,30 @@ export default function MainPage() {
             <div className={styles.whiteSeparator} >
                 <div className={styles.separatorSpanText}>Personal Projects</div>
             </div>
-            <div className={`${styles.content} ${styles.right} ${styles.imageBg}`}
+            <div className={`${styles.content} ${styles.right} ${styles.flexRow} ${styles.imageBg}`}
                  style={{
-                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blurredIdeBg.jpg'})`
+                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/tetrusLogo.jpg'})`
                  }}
             >
-                <h2>Tetrus</h2>
-                <p>The classic block-stacker game with a twist.</p>
-                <p>Enjoy hectic gameplay as 1-4 players all play on the same board simultaneously!</p>
-                <p>This project was created using Godot Engine and Aseprite for sprite art.</p>
-                <div className={styles.flexRow} >
-                    <Button text={"Play Tetrus"} color={"gold"} />
-                    <div className={styles.verticalSpacer} />
-                    <Button text={"View GitHub repo"} color={"white"} />
+                <div className={styles.imageGallery}>
+                    <ImageGallery
+                        items={tetrusImages}
+                        showPlayButton={false}
+                        showBullets={false}
+                        showNav={false}
+                    />
+                </div>
+
+                <div>
+                    <h2>Tetrus</h2>
+                    <p>The classic block-stacker game with a twist.</p>
+                    <p>Enjoy hectic gameplay as 1-4 players all play on the same board simultaneously!</p>
+                    <p>This project was created using Godot Engine and Aseprite for sprite art.</p>
+                    <div className={styles.flexRow} >
+                        <Button text={"Play Tetrus"} color={"gold"} />
+                        <div className={styles.verticalSpacer} />
+                        <a className={styles.whiteLink} href={"https://github.com/Ham-n-jam/tetrus-game"}>View GitHub repo</a>
+                    </div>
                 </div>
 
             </div>
