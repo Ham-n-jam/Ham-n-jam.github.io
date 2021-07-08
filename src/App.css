@@ -1,0 +1,6 @@
+@media all and (min-width: 750px) {
+  .App {
+    margin-left: var(--sideBarWidth);
+  }
+}
+

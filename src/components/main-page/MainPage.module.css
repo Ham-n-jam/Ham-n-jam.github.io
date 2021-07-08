@@ -1,0 +1,112 @@
+html {
+    font-size: 1em;
+    background-color: #262626;
+    color: #d9d9d9;
+}
+
+.table {
+    text-align: left;
+    border-spacing: 2rem 1rem;
+}
+
+.lineSeparator {
+    height: 1px;
+    width: 90%;
+    background: lightgray;
+}
+
+.body {
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto';
+    line-height: 1.313em;
+}
+h1 {
+    font-size: 3em;
+    margin: 0.563em 0;
+}
+h2 {
+    font-size: 2.25em;
+    margin: 0.625em 0;
+}
+h3 {
+    font-size: 1.5em;
+    margin: 1.313em 0;
+}
+h4 {
+    font-size: 1.313em;
+    margin: 1.313em 0;
+}
+h5 {
+    font-size: 1.125em;
+    margin: 1.313em 0;
+}
+h6 {
+    font-size: 1em;
+    margin: 0.75em 0;
+}
+
+.content {
+    font-size: 1.6rem;
+    color: white;
+    text-shadow: black 0 0 12px;
+    background-size: 49% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.spacer {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.whiteSeparator {
+    color: black;
+    font-style: italic;
+    font-size: 1.6rem;
+    padding: 1em 0;
+    text-align: center;
+    background: linear-gradient(225deg, #ffffff 0%, #999999 150%);
+    box-shadow: 0px 0px 3px black;
+    display: block;
+    -moz-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.separatorSpanText {
+    font-size: 0.7em;
+    display: block;
+    moz-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.right {
+    padding: 1.2em 5em 6em 45%;
+    background-position: 0 50%;
+}
+.left {
+    padding: 1.2em 30% 5em 6em;
+    background-position: 100% 50%;
+}
+
+.imageBg {
+    background-size: 100vw, 100vh;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.verticalSpacer {
+    height: 100%;
+    margin-right: 1rem;
+}
