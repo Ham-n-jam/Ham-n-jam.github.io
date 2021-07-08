@@ -45,7 +45,7 @@ export default function MainPage() {
                         <th>Key Technical Skills</th>
                         <td>
                             Java,
-                            JS, Typescript, React, Git,
+                            JS, Typescript, React, Git, Python,
                             PostgreSQL, MySQL, CSS, HTML, Kotlin, GDScript, C, MatLab.
                             <p />
                             Experience with Adobe
