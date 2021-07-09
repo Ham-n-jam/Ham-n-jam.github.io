@@ -116,6 +116,14 @@ export default function MainPage() {
                             <th>Education</th>
                             <td>Bachelor of Software Engineering with Honors at the University of Auckland, Auckland Grammar School</td>
                         </tr>
+
+                        <div className={styles.lineSeparator} />
+
+                        <tr className={styles.tr}>
+                            <th>Hobbies</th>
+                            <td>Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
+                                Swimming and Video Editing.</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>

@@ -43,8 +43,8 @@ h6 {
 }
 
 .content {
-    padding: 1.5em;
-    font-size: 1.4rem;
+    padding: 2.5em 1.5em;
+    font-size: 1.1rem;
     color: white;
     text-shadow: black 0 0 12px;
     background-size: 49% auto;
@@ -96,7 +96,7 @@ h6 {
 }
 
 .imageGallery {
-    max-width: 25em;
+    max-width: 30em;
     width: 100%;
     height: auto;
     padding: 50px;

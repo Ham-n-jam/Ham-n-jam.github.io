@@ -57,13 +57,14 @@ export default function SideBar() {
 
                     <ScrollToMenuItem href={"#about_me"} text={"About Me"}/>
                     <ScrollToMenuItem href={"#personal_projects"} text={"Personal Projects"}/>
+
                 </div>
 
                 <div className={styles.verticalSpacer} />
 
                 <div className={styles.cvDownload}>
                     <Button text={
-                        <a className={`${styles.link} ${styles.blackText}`} href={`${process.env.PUBLIC_URL}/files/Alex_Bell_CV.pdf`} download="download">
+                        <a className={`${styles.link} ${styles.blackText}`} href={`${process.env.PUBLIC_URL}/files/Alex_Bell_CV.pdf`} download="Alex_Bell_CV">
                             <FaDownload className={"icon"}/>
                             Download My CV
                         </a>

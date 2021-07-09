@@ -19,6 +19,10 @@
     .contentMenu {
         display: block;
     }
+
+    .verticalSpacer {
+        height: 100%;
+    }
 }
 
 /* Switch the sidebar to be a top bar when the screen size is small */
@@ -40,6 +44,10 @@
     .cvDownload {
         justify-content: center;
         display: flex;
+    }
+
+    .verticalSpacer {
+        height: 0%;
     }
 }
 
@@ -109,10 +117,6 @@
     margin: 10px;
 }
 
-.verticalSpacer {
-    height: 100%;
-}
-
 .cvDownload {
-    padding: 20px;
+    margin: 10px 20px 20px 20px;
 }
