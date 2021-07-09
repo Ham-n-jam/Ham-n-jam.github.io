@@ -1,12 +1,6 @@
-html {
-    font-size: 1em;
-    background-color: #262626;
-    color: #d9d9d9;
-}
-
 .table {
     text-align: left;
-    border-spacing: 2rem 1rem;
+    border-spacing: 1.2rem 1rem;
 }
 
 .lineSeparator {
@@ -21,34 +15,35 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto';
-    line-height: 1.313em;
+    line-height: 1.3em;
 }
 h1 {
-    font-size: 2.8em;
-    margin: 0.563em 0;
+    font-size: 2.8rem;
+    margin: 0.5em 0;
 }
 h2 {
-    font-size: 2em;
-    margin: 0.625em 0;
+    font-size: 2rem;
+    margin: 0.6em 0;
 }
 h3 {
-    font-size: 1.4em;
-    margin: 1.313em 0;
+    font-size: 1.4rem;
+    margin: 1.3em 0;
 }
 h4 {
-    font-size: 1.2em;
-    margin: 1.313em 0;
+    font-size: 1.2rem;
+    margin: 1.3em 0;
 }
 h5 {
-    font-size: 1.1em;
-    margin: 1.313em 0;
+    font-size: 1.1rem;
+    margin: 1.3em 0;
 }
 h6 {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0.75em 0;
 }
 
 .content {
+    padding: 1.5em;
     font-size: 1.4rem;
     color: white;
     text-shadow: black 0 0 12px;
@@ -57,9 +52,9 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.spacer {
-    margin-top: 2rem;
-    width: 100%;
+.paragraph {
+    max-width: 35em;
+    min-width: 15em;
 }
 
 .whiteSeparator {
@@ -71,41 +66,28 @@ h6 {
     background: linear-gradient(225deg, #ffffff 0%, #999999 150%);
     box-shadow: 0px 0px 3px black;
     display: block;
-    -moz-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1.5) rotate(-3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-}
-
-.separatorSpanText {
-    font-size: 0.5em;
-    display: block;
-    moz-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1.5) rotate(3deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-}
-
-.right {
-    padding: 1em;
-    background-position: 0 50%;
-}
-
-.left {
-    padding: 1.2em 30% 5em 6em;
-    background-position: 100% 50%;
 }
 
 .imageBg {
-    background-size: 100vw, 100vh;
+    background-size: cover;
 }
 
-.flexRow {
+.pairContainer {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
+}
+
+@media all and (min-width: 1100px) {
+    .pairContainer {
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 1099px) {
+    .pairContainer {
+        flex-direction: column;
+    }
 }
 
 .verticalSpacer {
@@ -114,11 +96,14 @@ h6 {
 }
 
 .imageGallery {
+    max-width: 25em;
     width: 100%;
     height: auto;
     padding: 50px;
 }
 
 .whiteLink {
-    color: white;
+    display: flex;
+    align-items: center;
+    color: lightgoldenrodyellow;
 }

@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.wrapper:hover {
+    background: #717171;
+}
+
+.wrapper:active {
+    background: #ffdda5;
+}
+
+.lineSeparator {
+    height: 1px;
+    width: 60%;
+    background: gray;
+}
+
+.a {
+    text-decoration: none;
+}
