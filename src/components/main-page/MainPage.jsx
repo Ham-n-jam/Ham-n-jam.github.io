@@ -205,7 +205,7 @@ export default function MainPage() {
                     />
                 </div>
 
-                <div>
+                <div className={styles.paragraph}>
                     <h2>Golden Hour Chronicles</h2>
                     <h5>(Work in progress)</h5>
                     <p>A Zelda-like 2D top-down action adventure game.</p>

@@ -53,8 +53,11 @@ h6 {
 }
 
 .paragraph {
-    max-width: 35em;
+    max-width: 40em;
     min-width: 15em;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .whiteSeparator {
