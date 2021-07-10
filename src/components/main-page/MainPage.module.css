@@ -16,6 +16,7 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto';
     line-height: 1.3em;
+    text-align: left;
 }
 h1 {
     font-size: 2.8rem;
@@ -56,8 +57,6 @@ h6 {
     max-width: 40em;
     min-width: 15em;
     text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .whiteSeparator {
@@ -78,19 +77,6 @@ h6 {
 .pairContainer {
     display: flex;
     align-items: center;
-    flex-direction: row;
-}
-
-@media all and (min-width: 1100px) {
-    .pairContainer {
-        flex-direction: row;
-    }
-}
-
-@media all and (max-width: 1099px) {
-    .pairContainer {
-        flex-direction: column;
-    }
 }
 
 .verticalSpacer {
@@ -109,4 +95,30 @@ h6 {
     display: flex;
     align-items: center;
     color: lightgoldenrodyellow;
+}
+
+@media all and (min-width: 1100px) {
+    .pairContainer {
+        flex-direction: row;
+    }
+
+    .paragraph {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media all and (max-width: 1099px) {
+    .pairContainer {
+        flex-direction: column;
+    }
+
+    .paragraph {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .paragraph {
+        text-align: left;
+    }
 }

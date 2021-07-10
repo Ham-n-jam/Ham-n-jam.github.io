@@ -63,13 +63,17 @@ export default function SideBar() {
                 <div className={styles.verticalSpacer} />
 
                 <div className={styles.cvDownload}>
-                    <Button text={
-                        <a className={`${styles.link} ${styles.blackText}`} href={`${process.env.PUBLIC_URL}/files/Alex_Bell_CV.pdf`} download="Alex_Bell_CV">
-                            <FaDownload className={"icon"}/>
-                            Download My CV
-                        </a>
-                    } color={"white"}
-                    />
+                    <a className={`${styles.link} ${styles.blackText}`} href={`${process.env.PUBLIC_URL}/files/Alex_Bell_CV.pdf`} download="Alex_Bell_CV">
+                        <Button
+                            text={
+                                <>
+                                    <FaDownload className={"icon"}/>
+                                    Download My CV
+                                </>
+                            }
+                            color={"white"}
+                        />
+                    </a>
                 </div>
 
             </div>

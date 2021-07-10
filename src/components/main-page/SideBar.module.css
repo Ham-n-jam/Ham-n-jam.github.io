@@ -85,6 +85,8 @@
 
 .blackText {
     color: black;
+    display: inline-block;
+    border-radius: 8px;
 }
 
 .pfp {
