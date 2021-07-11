@@ -153,7 +153,13 @@ export default function MainPage() {
                     <p>Enjoy hectic gameplay as 1-4 players all play on the same board simultaneously!</p>
                     <p>This project was created using Godot Engine and Aseprite for sprite art.</p>
                     <div className={styles.flexRow} >
-                        <Button text={"Play Tetrus"} color={"gold"} />
+                        <a className={styles.buttonLink} href={"https://ham-n-jam.github.io/tetrus-game/"}>
+                            <Button
+                                text={"Play Tetrus"}
+                                color={"gold"}
+                            />
+                        </a>
+
                         <p />
                         <a className={styles.whiteLink} href={"https://github.com/Ham-n-jam/tetrus-game"}>
                             <FaGithub className={"icon"} />

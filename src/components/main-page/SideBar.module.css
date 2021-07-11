@@ -79,7 +79,7 @@
 .link {
     text-decoration: none;
     color: lightgray;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
