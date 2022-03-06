@@ -79,9 +79,8 @@ export default function MainPage() {
             >
 
                 <div className={styles.paragraph}>
-                    <h2>Final Year Software Engineering Student</h2>
-                    <p> Hi! I'm Alex, a dedicated and motivated software engineering
-                        student, passionate about software development and design. I'm looking
+                    <h2>Software Engineer</h2>
+                    <p> Hi! I'm Alex, a dedicated and motivated software engineer, passionate about software development and design. I'm looking
                         to bring new and innovative ideas to the table that can
                         improve company products.
                     </p>
@@ -91,7 +90,7 @@ export default function MainPage() {
                             <th>Key Technical Skills</th>
                             <td>
                                 Java,
-                                JS, Typescript, React, Git, Python,
+                                JS, Typescript, React, Angular, Git, Python,
                                 PostgreSQL, MySQL, CSS, HTML, Kotlin, GDScript, C, MatLab.
                                 <p />
                                 Experience with Adobe
