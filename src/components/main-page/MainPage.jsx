@@ -67,6 +67,17 @@ export default function MainPage() {
         },
     ];
 
+    const incomeTickerImages = [
+        {
+            original: `${process.env.PUBLIC_URL + '/images/income-ticker/incomeTicker.png'}`,
+            thumbnail: `${process.env.PUBLIC_URL + '/images/income-ticker/incomeTicker.png'}`,
+        },
+        {
+            original: `${process.env.PUBLIC_URL + '/images/income-ticker/incomeSetup.png'}`,
+            thumbnail: `${process.env.PUBLIC_URL + '/images/income-ticker/incomeSetup.png'}`,
+        },
+    ]
+
     return (
         <div className={styles.body}>
             <a id="about_me">
@@ -221,6 +232,44 @@ export default function MainPage() {
                         <FaTwitter className={"icon"} />
                         Follow GHC on Twitter
                     </a>
+                </div>
+            </div>
+
+            <div className={`${styles.content} ${styles.pairContainer} ${styles.imageBg}`}
+                 style={{
+                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blurredBlackBg.png'})`
+                 }}
+            >
+                <div className={styles.paragraph}>
+                    <h2>Income Ticker</h2>
+                    <p>A fun little app I made that you can put on in the background at work.</p>
+                    <p>Input your payment details and watch your income for the day slowly tick up as you work!
+                    The ticker will take your off-days and lunch breaks into account so that it only ticks over while
+                    you are on the clock.</p>
+                    <p>Developed using React and deployed to GitHub Pages.</p>
+                    <div className={styles.flexRow} >
+                        <a className={styles.buttonLink} href={"https://ham-n-jam.github.io/income-ticker/#/"}>
+                            <Button
+                                text={"Check it out"}
+                                color={"gold"}
+                            />
+                        </a>
+
+                        <p />
+                        <a className={styles.whiteLink} href={"https://github.com/Ham-n-jam/income-ticker"}>
+                            <FaGithub className={"icon"} />
+                            View GitHub repo
+                        </a>
+                    </div>
+                </div>
+
+                <div className={styles.imageGallery}>
+                    <ImageGallery
+                        items={incomeTickerImages}
+                        showPlayButton={false}
+                        showBullets={false}
+                        showNav={false}
+                    />
                 </div>
             </div>
 
