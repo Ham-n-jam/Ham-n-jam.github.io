@@ -21,12 +21,12 @@ export default function MainPage() {
             bgImage: 'blurredIdeBg.jpg'
         },
         {
-            component: <GoldenHourChronicles />,
-            bgImage: 'ghc/title.jpg'
-        },
-        {
             component: <IncomeTicker />,
             bgImage: 'blurredBlackBg.png'
+        },
+        {
+            component: <GoldenHourChronicles />,
+            bgImage: 'ghc/title.jpg'
         },
     ]
 
