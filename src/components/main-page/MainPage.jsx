@@ -47,7 +47,7 @@ export default function MainPage() {
             {
                 allProjects.map(((project, index) => {
                 return (
-                    <div className={`${styles.content} ${styles.pairContainer} ${styles.imageBg}`}
+                    <div className={`${styles.imageBg}`}
                          style={{
                              backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
                          }}

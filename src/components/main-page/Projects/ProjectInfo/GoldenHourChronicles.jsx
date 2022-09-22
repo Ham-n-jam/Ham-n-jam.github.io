@@ -29,6 +29,5 @@ export default function GoldenHourChronicles() {
                 Follow GHC on Twitter
             </a>
         ]}
-        isMirrored={true}
     />
 }

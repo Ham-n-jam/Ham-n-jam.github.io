@@ -34,5 +34,6 @@ export default function Tetrus() {
                 View GitHub repo
             </a>
         ]}
+        isMirrored={true}
     />
 }

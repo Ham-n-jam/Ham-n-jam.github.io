@@ -29,6 +29,5 @@ export default function PokeBuilder() {
                 View GitHub repo
             </a>
         ]}
-        isMirrored={true}
     />
 }

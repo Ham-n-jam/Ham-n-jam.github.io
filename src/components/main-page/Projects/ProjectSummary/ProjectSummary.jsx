@@ -8,7 +8,7 @@ export default function ProjectSummary({title, subTitle, description, galleryIma
         <h2>{title}</h2>
         <h5>{subTitle}</h5>
         <p>{description}</p>
-        <div className={styles.flexRow}>
+        <div>
             {links.map((link) => {
                 return (<>
                         {link}
@@ -28,7 +28,7 @@ export default function ProjectSummary({title, subTitle, description, galleryIma
     </div>)
 
     return (
-        <div className={`${styles.content} ${styles.pairContainer}`}>
+        <div className={`${styles.pairContainer}`}>
             {isMirrored ? [info, imageGallery] : [imageGallery, info]}
         </div>
     );

@@ -1,26 +1,22 @@
 .paragraph {
     max-width: 40em;
-    min-width: 15em;
     text-align: justify;
 }
 
-.content {
+.pairContainer {
+    display: flex;
+    align-items: center;
     padding: 2.5em 1.5em;
     font-size: 1.1rem;
     color: white;
     text-shadow: black 0 0 12px;
 }
 
-.pairContainer {
-    display: flex;
-    align-items: center;
-}
-
 .imageGallery {
-    max-width: 30em;
-    width: 100%;
+    width: 50%;
+    min-width: 50%;
     height: auto;
-    padding: 50px;
+    padding: 30px;
 }
 
 .whiteLink {

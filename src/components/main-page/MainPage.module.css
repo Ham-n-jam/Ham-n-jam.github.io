@@ -48,9 +48,6 @@ h6 {
     font-size: 1.1rem;
     color: white;
     text-shadow: black 0 0 12px;
-    background-size: 49% auto;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .paragraph {
@@ -73,6 +70,8 @@ h6 {
 
 .imageBg {
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .pairContainer {

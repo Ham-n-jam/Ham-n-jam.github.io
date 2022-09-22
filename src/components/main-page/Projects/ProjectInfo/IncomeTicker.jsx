@@ -38,5 +38,6 @@ export default function IncomeTicker() {
                 View GitHub repo
             </a>
         ]}
+        isMirrored={true}
     />
 }
