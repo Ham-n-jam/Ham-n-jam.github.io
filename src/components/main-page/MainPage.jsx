@@ -9,24 +9,25 @@ import PokeBuilder from "./Projects/ProjectInfo/PokeBuilder";
 import Tetrus from "./Projects/ProjectInfo/Tetrus";
 import AboutMe from "./about-me/AboutMe";
 import SectionHeadline from "./SectionHeadline";
+import TvScreenTurnOnEffect from "./TvScreenTurnOnEffect";
 
 export default function MainPage() {
     const allProjects = [
         {
             component: <Tetrus />,
-            bgImage: 'tetrus/tetrusLogo.jpg'
+            bgImage: 'tetrus/bg.png'
         },
         {
             component: <PokeBuilder />,
-            bgImage: 'blurredIdeBg.jpg'
+            bgImage: 'pokebuilder/bg.png'
         },
         {
             component: <IncomeTicker />,
-            bgImage: 'blurredBlackBg.png'
+            bgImage: 'income-ticker/bg.png'
         },
         {
             component: <GoldenHourChronicles />,
-            bgImage: 'ghc/title.jpg'
+            bgImage: 'ghc/bg.png'
         },
     ]
 
@@ -36,7 +37,7 @@ export default function MainPage() {
             <SectionHeadline id="about_me" title="About Me" />
             <div className={`${styles.content} ${styles.imageBg}`}
                  style={{
-                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blurredWorkspaceBg.jpg'})`
+                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg.png'})`
                  }}
             >
                 <AboutMe />

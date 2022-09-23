@@ -69,9 +69,7 @@ h6 {
 }
 
 .imageBg {
-    background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .pairContainer {
@@ -115,8 +113,10 @@ h6 {
     }
 
     .paragraph {
+        max-width: none;
         margin-left: 0;
         margin-right: 0;
+        justify-content: center;
     }
 
     .paragraph {
