@@ -5,9 +5,6 @@ import React from "react";
 import Button from "../../../global/Button";
 
 export default function IncomeTicker() {
-    const imageFolder = "income-ticker"
-    const imageNames = ["incomeTicker.png", "incomeSetup.png"]
-
     return <ProjectSummary
         title="Income Ticker"
         description={
@@ -20,17 +17,13 @@ export default function IncomeTicker() {
                     you are on the clock.</p>
                 <p>Developed using React and deployed to GitHub Pages.</p>
             </>}
-        galleryImages={imageNames.map((imgName => (
-            {
-                original: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`,
-                thumbnail: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`
-            }
-        )))}
+        imageFolder={"income-ticker"}
+        imageNames = {["incomeTicker.png", "incomeSetup.png"]}
         links={[
             <a className={styles.buttonLink} href={"https://ham-n-jam.github.io/income-ticker/#/"}>
                 <Button
                     text={"Check it out"}
-                    color={"gold"}
+                    color={"animated"}
                 />
             </a>,
             <a className={styles.whiteLink} href={"https://github.com/Ham-n-jam/income-ticker"}>

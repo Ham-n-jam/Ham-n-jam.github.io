@@ -5,7 +5,7 @@ export default function Button({ text, onClick, color = "black" }) {
     const classNames = {
         black: "black",
         white: "white",
-        gold: "gold",
+        animated: "animated",
     };
 
     const className = classNames.hasOwnProperty(color) ? classNames[color] : "black";

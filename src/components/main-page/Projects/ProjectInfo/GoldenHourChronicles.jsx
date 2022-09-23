@@ -4,9 +4,6 @@ import {FaTwitter} from "react-icons/fa";
 import React from "react";
 
 export default function GoldenHourChronicles() {
-    const imageFolder = "ghc"
-    const imageNames = ["gameplay.png", "dialogue.png", "loadGame.png", "silhouettes.png"]
-
    return <ProjectSummary
         title="Golden Hour Chronicles"
         subTitle="(Work in progress)"
@@ -17,12 +14,8 @@ export default function GoldenHourChronicles() {
                     to uncover the true nature of the world.</p>
                 <p>This project is being developed using Godot Engine and Aseprite for sprite art.</p>
             </>}
-        galleryImages={imageNames.map((imgName => (
-            {
-                original: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`,
-                thumbnail: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`
-            }
-        )))}
+        imageFolder={"ghc"}
+        imageNames = {["gameplay.png", "dialogue.png", "loadGame.png", "silhouettes.png"]}
         links={[
             <a className={styles.whiteLink} href={"https://twitter.com/GoldenHourC"}>
                 <FaTwitter className={"icon"}/>

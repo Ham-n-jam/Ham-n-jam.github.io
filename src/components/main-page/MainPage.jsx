@@ -9,7 +9,6 @@ import PokeBuilder from "./Projects/ProjectInfo/PokeBuilder";
 import Tetrus from "./Projects/ProjectInfo/Tetrus";
 import AboutMe from "./about-me/AboutMe";
 import SectionHeadline from "./SectionHeadline";
-import TvScreenTurnOnEffect from "./TvScreenTurnOnEffect";
 
 export default function MainPage() {
     const allProjects = [

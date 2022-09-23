@@ -1,8 +1,8 @@
 import styles from "../MainPage.module.css";
 import React from "react";
+import {FaGraduationCap, FaBriefcase, FaCode, FaHandPeace} from "react-icons/fa";
 
 export default function AboutMe() {
-
     return (
         <div className={styles.paragraph}>
             <h2>Software Engineer</h2>
@@ -12,12 +12,13 @@ export default function AboutMe() {
             </p>
             <table className={styles.table}>
                 <tbody>
-                <tr className={styles.tr}>
-                    <th>Key Technical Skills</th>
+                <tr>
+                    <th>
+                        <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>
+                    </th>
                     <td>
-                        Java,
-                        JS, Typescript, React, Angular, Git, Python,
-                        PostgreSQL, MySQL, CSS, HTML, Kotlin, GDScript, C, MatLab.
+                        Java, JS, Typescript, React, Angular, Git, Python,
+                        SQL, CSS, HTML, Kotlin, GDScript, C, MatLab.
                         <p/>
                         Experience with Adobe
                         Photoshop and Illustrator.
@@ -26,8 +27,10 @@ export default function AboutMe() {
 
                 <div className={styles.lineSeparator}/>
 
-                <tr className={styles.tr}>
-                    <th>Employment History</th>
+                <tr>
+                    <th>
+                        <div className={styles.pairContainer}><FaBriefcase className={"icon"}/>Employment History</div>
+                    </th>
                     <td>
                         Vista Entertainment Solutions - Graduate Software Engineer
                         <p/>
@@ -39,17 +42,22 @@ export default function AboutMe() {
 
                 <div className={styles.lineSeparator}/>
 
-                <tr className={styles.tr}>
-                    <th>Education</th>
-                    <td>Bachelor of Software Engineering with Honors at the University of Auckland, Auckland
-                        Grammar School
+                <tr>
+                    <th>
+                        <div className={styles.pairContainer}><FaGraduationCap className={"icon"}/>Education</div>
+                    </th>
+                    <td>Bachelor of Software Engineering with First Class Honors at the University of Auckland
+                        <p/>
+                        Auckland Grammar School
                     </td>
                 </tr>
 
                 <div className={styles.lineSeparator}/>
 
-                <tr className={styles.tr}>
-                    <th>Hobbies</th>
+                <tr>
+                    <th>
+                        <div className={styles.pairContainer}><FaHandPeace className={"icon"}/>Hobbies</div>
+                    </th>
                     <td>Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
                         Swimming and Video Editing.
                     </td>

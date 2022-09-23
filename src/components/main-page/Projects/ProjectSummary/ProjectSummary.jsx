@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ProjectSummary.module.css";
 import ImageGallery from 'react-image-gallery';
 
-export default function ProjectSummary({title, subTitle, description, galleryImages, isMirrored, links}) {
+export default function ProjectSummary({title, subTitle, description, imageNames, imageFolder, isMirrored, links}) {
 
     const info = (<div className={styles.paragraph}>
         <h2>{title}</h2>
@@ -20,7 +20,12 @@ export default function ProjectSummary({title, subTitle, description, galleryIma
 
     const imageGallery = (<div className={styles.imageGallery}>
         <ImageGallery
-            items={galleryImages}
+            items={imageNames.map((imgName => (
+                {
+                    original: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`,
+                    thumbnail: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`
+                }
+            )))}
             showPlayButton={false}
             showBullets={false}
             showNav={false}
