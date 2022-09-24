@@ -39,6 +39,7 @@
 @media all and (max-width: 1099px) {
     .pairContainer {
         flex-direction: column;
+        font-size: 0.9rem;
     }
 
     .paragraph {

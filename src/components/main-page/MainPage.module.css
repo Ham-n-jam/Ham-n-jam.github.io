@@ -97,10 +97,6 @@ h6 {
 }
 
 @media all and (min-width: 1100px) {
-    .pairContainer {
-        flex-direction: row;
-    }
-
     .paragraph {
         margin-left: 5%;
         margin-right: 5%;
@@ -108,18 +104,38 @@ h6 {
 }
 
 @media all and (max-width: 1099px) {
-    .pairContainer {
-        flex-direction: column;
-    }
-
     .paragraph {
         max-width: none;
         margin-left: 0;
         margin-right: 0;
         justify-content: center;
+        text-align: left;
     }
 
-    .paragraph {
-        text-align: left;
+    .content {
+        font-size: 0.8rem;
+    }
+
+    .whiteSeparator {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    h4 {
+        font-size: 1.0rem;
+    }
+    h5 {
+        font-size: 0.9rem;
+    }
+    h6 {
+        font-size: 0.8rem;
     }
 }

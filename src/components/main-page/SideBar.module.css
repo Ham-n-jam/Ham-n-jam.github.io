@@ -25,32 +25,6 @@
     }
 }
 
-/* Switch the sidebar to be a top bar when the screen size is small */
-@media all and (max-width: 1099px) {
-    .navbar {
-        min-width: calc(100vw - var(--scrollBarWidth));
-        height: var(--sideBarHeight);
-        position: relative;
-    }
-
-    .contentMenu {
-        display: none;
-    }
-
-    .wrapper {
-        justify-content: center;
-    }
-
-    .cvDownload {
-        justify-content: center;
-        display: flex;
-    }
-
-    .verticalSpacer {
-        height: 0%;
-    }
-}
-
 .wrapper {
     display: flex;
     width: 100%;
@@ -62,12 +36,12 @@
     color: white;
     text-align: left;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .name {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-shadow: 0px 0px 3px #262626;
 }
 
@@ -121,4 +95,38 @@
 
 .cvDownload {
     margin: 10px 20px 20px 20px;
+}
+
+/* Switch the sidebar to be a top bar when the screen size is small */
+@media all and (max-width: 1099px) {
+    .navbar {
+        min-width: calc(100vw - var(--scrollBarWidth));
+        height: var(--sideBarHeight);
+        position: relative;
+    }
+
+    .contentMenu {
+        display: none;
+    }
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    .cvDownload {
+        justify-content: center;
+        display: flex;
+    }
+
+    .verticalSpacer {
+        height: 0%;
+    }
+
+    .bg {
+        font-size: 0.9rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
 }
