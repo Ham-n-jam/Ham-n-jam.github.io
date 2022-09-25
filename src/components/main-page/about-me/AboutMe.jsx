@@ -17,8 +17,8 @@ export default function AboutMe() {
                         <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>
                     </th>
                     <td>
-                        Java, JS, Typescript, React, Angular, Git, Python,
-                        SQL, CSS, HTML, Kotlin, GDScript, C, MatLab.
+                        React, Angular, Typescript, JS, Java, SQL, CSS,
+                        Python, GDScript, C# .NET, Kotlin
                         <p/>
                         Experience with Adobe
                         Photoshop and Illustrator.
