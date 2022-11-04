@@ -2,7 +2,7 @@ import ProjectSummary from "../ProjectSummary/ProjectSummary";
 import styles from "../../MainPage.module.css";
 import {FaGithub} from "react-icons/fa";
 import React from "react";
-import Button from "../../../global/Button";
+import Button from "../../../Global/Button";
 
 export default function IncomeTicker() {
     return <ProjectSummary

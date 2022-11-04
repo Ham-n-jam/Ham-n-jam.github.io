@@ -4,8 +4,8 @@ import {MdEmail} from "react-icons/md";
 import {MdPhone} from "react-icons/md";
 import {FaGithub} from "react-icons/fa";
 import {FaDownload} from "react-icons/fa";
-import ScrollToMenuItem from "../global/ScrollToMenuItem";
-import Button from "../global/Button";
+import ScrollToMenuItem from "../Global/ScrollToMenuItem";
+import Button from "../Global/Button";
 
 import "../../GlobalStyles.css"
 

@@ -1,7 +1,7 @@
 import './App.css';
-import MainPage from "./components/main-page/MainPage";
-import SideBar from "./components/main-page/SideBar";
-import TvScreenTurnOnEffect from "./components/main-page/TvScreenTurnOnEffect";
+import MainPage from "./components/MainPage/MainPage";
+import SideBar from "./components/MainPage/SideBar";
+import TvScreenTurnOnEffect from "./components/MainPage/TvScreenTurnOnEffect";
 
 function App() {
   return (

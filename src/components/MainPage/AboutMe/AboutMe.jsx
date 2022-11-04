@@ -1,6 +1,29 @@
 import styles from "../MainPage.module.css";
 import React from "react";
-import {FaGraduationCap, FaBriefcase, FaCode, FaHandPeace} from "react-icons/fa";
+import {
+    FaGraduationCap,
+    FaBriefcase,
+    FaCode,
+    FaHandPeace,
+    FaReact,
+    FaAngular,
+    FaCss3,
+    FaJava,
+    FaPython
+} from "react-icons/fa";
+import {
+    SiCsharp,
+    SiPostgresql,
+    SiDotnet,
+    SiKotlin,
+    SiJavascript,
+    SiTypescript,
+    SiGodotengine,
+    SiAdobephotoshop, SiAdobeillustrator,
+    SiAseprite
+} from "react-icons/si";
+
+import TechSkill from "./TechSkill/TechSkill";
 
 export default function AboutMe() {
     return (
@@ -17,11 +40,26 @@ export default function AboutMe() {
                         <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>
                     </th>
                     <td>
-                        React, Angular, Typescript, JS, Java, SQL, CSS,
-                        Python, GDScript, C# .NET, Kotlin
+                        <div className={styles.flexBox}>
+                            <TechSkill skillName='React' icon={<FaReact color={'#5bcded'}/>} />
+                            <TechSkill skillName='Angular' icon={<FaAngular color={'#d22c30'} />} />
+                            <TechSkill skillName='Typescript' icon={<SiTypescript color={'#3d98ff'} />} />
+                            <TechSkill skillName='Javascript' icon={<SiJavascript color={'#e8d21d'} />} />
+                            <TechSkill skillName='CSS' icon={<FaCss3 color={'#25acff'} />} />
+                            <TechSkill skillName='Java' icon={<FaJava color={'#ffb471'} />} />
+                            <TechSkill skillName='C#' icon={<SiCsharp color={'#9871cf'} />} />
+                            <TechSkill skillName='.NET' icon={<SiDotnet color={'#9770ce'} />} />
+                            <TechSkill skillName='SQL' icon={<SiPostgresql color={'#55acf5'} />} />
+                            <TechSkill skillName='Kotlin' icon={<SiKotlin color={'#ff50a7'} />} />
+                            <TechSkill skillName='GDScript' icon={<SiGodotengine color={'#5fbafd'} />} />
+                            <TechSkill skillName='Python' icon={<FaPython color={'#fdda4d'} />} />
+                        </div>
                         <p/>
-                        Experience with Adobe
-                        Photoshop and Illustrator.
+                        <div className={styles.flexBox}>
+                            <TechSkill skillName='Photoshop' icon={<SiAdobephotoshop color={'#2f9ef1'} />} />
+                            <TechSkill skillName='Illustrator' icon={<SiAdobeillustrator color={'#ffb246'} />} />
+                            <TechSkill skillName='Aseprite' icon={<SiAseprite color={'#fdfdfe'} />} />
+                        </div>
                     </td>
                 </tr>
 

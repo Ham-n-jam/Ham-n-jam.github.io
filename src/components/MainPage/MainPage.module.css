@@ -3,6 +3,11 @@
     border-spacing: 1.2rem 1rem;
 }
 
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .lineSeparator {
     height: 1px;
     width: 90%;

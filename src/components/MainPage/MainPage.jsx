@@ -7,7 +7,7 @@ import GoldenHourChronicles from "./Projects/ProjectInfo/GoldenHourChronicles";
 import IncomeTicker from "./Projects/ProjectInfo/IncomeTicker";
 import PokeBuilder from "./Projects/ProjectInfo/PokeBuilder";
 import Tetrus from "./Projects/ProjectInfo/Tetrus";
-import AboutMe from "./about-me/AboutMe";
+import AboutMe from "./AboutMe/AboutMe";
 import SectionHeadline from "./SectionHeadline";
 
 export default function MainPage() {
