@@ -3,6 +3,10 @@
     border-spacing: 1.2rem 1rem;
 }
 
+.mobileOnlyHeader {
+    display: none;
+}
+
 .flexBox {
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +113,15 @@ h6 {
 }
 
 @media all and (max-width: 1099px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .mobileOnlyHeader {
+        display: block;
+        padding-bottom: 1rem;
+    }
+
     .paragraph {
         max-width: none;
         margin-left: 0;

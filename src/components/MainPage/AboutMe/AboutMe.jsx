@@ -26,6 +26,11 @@ import {
 import TechSkill from "./TechSkill/TechSkill";
 
 export default function AboutMe() {
+    const techSkillsHeader = <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>
+    const employmentHistoryHeader = <div className={styles.pairContainer}><FaBriefcase className={"icon"}/>Employment History</div>
+    const educationHeader = <div className={styles.pairContainer}><FaGraduationCap className={"icon"}/>Education</div>
+    const hobbiesHeader = <div className={styles.pairContainer}><FaHandPeace className={"icon"}/>Hobbies</div>
+
     return (
         <div className={styles.paragraph}>
             <h2>Software Engineer</h2>
@@ -36,29 +41,30 @@ export default function AboutMe() {
             <table className={styles.table}>
                 <tbody>
                 <tr>
-                    <th>
-                        <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>
+                    <th className={styles.hideOnMobile}>
+                        {techSkillsHeader}
                     </th>
                     <td>
+                        <div className={styles.mobileOnlyHeader}>{techSkillsHeader}</div>
                         <div className={styles.flexBox}>
-                            <TechSkill skillName='React' icon={<FaReact color={'#5bcded'}/>} />
-                            <TechSkill skillName='Angular' icon={<FaAngular color={'#d22c30'} />} />
-                            <TechSkill skillName='Typescript' icon={<SiTypescript color={'#3d98ff'} />} />
-                            <TechSkill skillName='Javascript' icon={<SiJavascript color={'#e8d21d'} />} />
-                            <TechSkill skillName='CSS' icon={<FaCss3 color={'#25acff'} />} />
-                            <TechSkill skillName='Java' icon={<FaJava color={'#ffb471'} />} />
-                            <TechSkill skillName='C#' icon={<SiCsharp color={'#9871cf'} />} />
-                            <TechSkill skillName='.NET' icon={<SiDotnet color={'#9770ce'} />} />
-                            <TechSkill skillName='SQL' icon={<SiPostgresql color={'#55acf5'} />} />
-                            <TechSkill skillName='Kotlin' icon={<SiKotlin color={'#ff50a7'} />} />
-                            <TechSkill skillName='GDScript' icon={<SiGodotengine color={'#5fbafd'} />} />
-                            <TechSkill skillName='Python' icon={<FaPython color={'#fdda4d'} />} />
+                            <TechSkill skillName='React' icon={<FaReact />} />
+                            <TechSkill skillName='Angular' icon={<FaAngular />} />
+                            <TechSkill skillName='Typescript' icon={<SiTypescript />} />
+                            <TechSkill skillName='Javascript' icon={<SiJavascript />} />
+                            <TechSkill skillName='CSS' icon={<FaCss3 />} />
+                            <TechSkill skillName='Java' icon={<FaJava />} />
+                            <TechSkill skillName='C#' icon={<SiCsharp />} />
+                            <TechSkill skillName='.NET' icon={<SiDotnet />} />
+                            <TechSkill skillName='SQL' icon={<SiPostgresql />} />
+                            <TechSkill skillName='Kotlin' icon={<SiKotlin />} />
+                            <TechSkill skillName='GDScript' icon={<SiGodotengine />} />
+                            <TechSkill skillName='Python' icon={<FaPython />} />
                         </div>
                         <p/>
                         <div className={styles.flexBox}>
-                            <TechSkill skillName='Photoshop' icon={<SiAdobephotoshop color={'#2f9ef1'} />} />
-                            <TechSkill skillName='Illustrator' icon={<SiAdobeillustrator color={'#ffb246'} />} />
-                            <TechSkill skillName='Aseprite' icon={<SiAseprite color={'#fdfdfe'} />} />
+                            <TechSkill skillName='Photoshop' icon={<SiAdobephotoshop />} />
+                            <TechSkill skillName='Illustrator' icon={<SiAdobeillustrator />} />
+                            <TechSkill skillName='Aseprite' icon={<SiAseprite />} />
                         </div>
                     </td>
                 </tr>
@@ -66,10 +72,11 @@ export default function AboutMe() {
                 <div className={styles.lineSeparator}/>
 
                 <tr>
-                    <th>
-                        <div className={styles.pairContainer}><FaBriefcase className={"icon"}/>Employment History</div>
+                    <th className={styles.hideOnMobile}>
+                        {employmentHistoryHeader}
                     </th>
                     <td>
+                        <div className={styles.mobileOnlyHeader}>{employmentHistoryHeader}</div>
                         Vista Entertainment Solutions - Graduate Software Engineer
                         <p/>
                         Pipers Patent Attorneys - Database Engineer Intern
@@ -81,10 +88,12 @@ export default function AboutMe() {
                 <div className={styles.lineSeparator}/>
 
                 <tr>
-                    <th>
-                        <div className={styles.pairContainer}><FaGraduationCap className={"icon"}/>Education</div>
+                    <th className={styles.hideOnMobile}>
+                        {educationHeader}
                     </th>
-                    <td>Bachelor of Software Engineering with First Class Honors at the University of Auckland
+                    <td>
+                        <div className={styles.mobileOnlyHeader}>{educationHeader}</div>
+                        Bachelor of Software Engineering with First Class Honors at the University of Auckland
                         <p/>
                         Auckland Grammar School
                     </td>
@@ -93,10 +102,12 @@ export default function AboutMe() {
                 <div className={styles.lineSeparator}/>
 
                 <tr>
-                    <th>
-                        <div className={styles.pairContainer}><FaHandPeace className={"icon"}/>Hobbies</div>
+                    <th className={styles.hideOnMobile}>
+                        {hobbiesHeader}
                     </th>
-                    <td>Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
+                    <td>
+                        <div className={styles.mobileOnlyHeader}>{hobbiesHeader}</div>
+                        Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
                         Swimming and Video Editing.
                     </td>
                 </tr>
