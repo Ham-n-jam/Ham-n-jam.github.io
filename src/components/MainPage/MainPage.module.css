@@ -82,6 +82,7 @@ h6 {
 }
 
 .pairContainer {
+    font-weight: bold;
     display: flex;
     align-items: center;
 }
