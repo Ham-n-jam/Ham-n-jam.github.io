@@ -6,7 +6,6 @@
 .roundedBox {
     display: flex;
     align-items: center;
-    max-width: 100px;
     padding: 0.4rem 0.8rem 0.4rem 0.6rem;
 
     /* From https://css.glass */

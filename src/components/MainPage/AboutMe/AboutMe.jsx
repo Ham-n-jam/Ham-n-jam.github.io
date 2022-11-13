@@ -23,7 +23,7 @@ import {
     SiAseprite
 } from "react-icons/si";
 
-import TechSkill from "./TechSkill/TechSkill";
+import TechSkill from "../../Global/TechSkill/TechSkill";
 
 export default function AboutMe() {
     const techSkillsHeader = <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>

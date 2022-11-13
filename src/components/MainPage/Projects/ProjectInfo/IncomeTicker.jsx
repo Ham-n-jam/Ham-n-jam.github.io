@@ -1,8 +1,9 @@
 import ProjectSummary from "../ProjectSummary/ProjectSummary";
 import styles from "../../MainPage.module.css";
-import {FaGithub} from "react-icons/fa";
+import {FaGithub, FaReact} from "react-icons/fa";
 import React from "react";
 import Button from "../../../Global/Button";
+import TechSkill from "../../../Global/TechSkill/TechSkill";
 
 export default function IncomeTicker() {
     return <ProjectSummary
@@ -15,8 +16,10 @@ export default function IncomeTicker() {
                     over
                     while
                     you are on the clock.</p>
-                <p>Developed using React and deployed to GitHub Pages.</p>
-            </>}
+                <div className={styles.flexBox}>
+                    <TechSkill skillName='React' icon={<FaReact />} />
+                    <TechSkill skillName='GitHub Pages' icon={<FaGithub />} />
+                </div>            </>}
         imageFolder={"income-ticker"}
         imageNames = {["incomeTicker.png", "incomeSetup.png"]}
         links={[
