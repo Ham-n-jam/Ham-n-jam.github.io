@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./ScrollToMenuItem.module.css";
 
-export default function ScrollToMenuItem({ href, text }) {
+interface ScrollToMenuItemProps {
+    href: string,
+    text: string
+}
+
+export default function ScrollToMenuItem({ href, text }: ScrollToMenuItemProps) {
 
     return (
         <a className={styles.a} href={href}>

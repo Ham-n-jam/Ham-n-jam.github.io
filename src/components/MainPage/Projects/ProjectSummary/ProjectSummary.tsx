@@ -1,8 +1,18 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import styles from "./ProjectSummary.module.css";
 import ImageGallery from 'react-image-gallery';
 
-export default function ProjectSummary({title, subTitle, description, imageNames, imageFolder, isMirrored, links}) {
+interface ProjectSummaryProps {
+    title: string,
+    subTitle?: string,
+    description: ReactElement,
+    imageNames: string[],
+    imageFolder: string,
+    isMirrored?: boolean,
+    links: ReactElement[]
+}
+
+export default function ProjectSummary({title, subTitle, description, imageNames, imageFolder, isMirrored, links}: ProjectSummaryProps) {
 
     const info = (<div className={styles.paragraph}>
         <h2>{title}</h2>

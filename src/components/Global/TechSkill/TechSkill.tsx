@@ -1,7 +1,11 @@
 import styles from "./TechSkill.module.css";
-import React from "react";
+import React, {ReactElement} from "react";
 
-export default function TechSkill({skillName, icon}) {
+interface TechSkillProps {
+    skillName: string,
+    icon: ReactElement
+}
+export default function TechSkill({skillName, icon}: TechSkillProps) {
     return (
         <div className={styles.wrapper}>
             <div className={styles.roundedBox}>
