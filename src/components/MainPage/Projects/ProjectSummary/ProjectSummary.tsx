@@ -19,23 +19,24 @@ export default function ProjectSummary({title, subTitle, description, imageNames
         <h5>{subTitle}</h5>
         <p>{description}</p>
         <div>
-            {links.map((link) => {
-                return (<>
+            {links.map((link, idx) => {
+                return (
+                    <div key={idx}>
                         {link}
                         <p/>
-                    </>);
+                    </div>);
             })}
         </div>
     </div>)
 
     const imageGallery = (<div className={styles.imageGallery}>
         <ImageGallery
-            items={imageNames.map((imgName => (
+            items={imageNames.map((imgName, idx) => (
                 {
                     original: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`,
                     thumbnail: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`
                 }
-            )))}
+            ))}
             showPlayButton={false}
             showBullets={false}
             showNav={false}

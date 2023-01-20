@@ -22,7 +22,7 @@
 .whiteLink {
     display: inline-flex;
     align-items: center;
-    color: lightgoldenrodyellow;
+    color: white;
 }
 
 @media all and (min-width: 1100px) {

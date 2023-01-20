@@ -33,17 +33,19 @@ export default function MainPage() {
 
     return (
         <div className={styles.body}>
-            <SectionHeadline id="about_me" title="About Me" />
-            <div className={`${styles.content} ${styles.imageBg}`}
+            <SectionHeadline id="about_me" title="About Me " />
+            <div className={`${styles.imageBg}`}
                  style={{
                      backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg.png'})`
                  }}
             >
-                <AboutMe />
-                <p/>
+                <div className={`${styles.content} ${styles.angleGradientBg}`}>
+                    <AboutMe />
+                    <p/>
+                </div>
             </div>
 
-            <SectionHeadline id="personal_projects" title="Personal Projects" />
+            <SectionHeadline id="personal_projects" title="Personal Projects " />
             {
                 allProjects.map(((project, index) => {
                 return (
@@ -51,6 +53,7 @@ export default function MainPage() {
                          style={{
                              backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
                          }}
+                         key={index}
                     >
                         {project.component}
                     </div>
