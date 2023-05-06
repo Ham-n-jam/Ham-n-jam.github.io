@@ -33,8 +33,8 @@ export default function SideBar() {
                                 </a>
                             </div>
                             <div>
-                                <a className={styles.link} href="tel:+6421-084-90623">
-                                    <MdPhone className={"icon"}/> (+64)21-084-90623
+                                <a className={styles.link} href="tel:04-6858-3505">
+                                    <MdPhone className={"icon"}/> 04 6858 3505
                                 </a>
                             </div>
                             <div>
