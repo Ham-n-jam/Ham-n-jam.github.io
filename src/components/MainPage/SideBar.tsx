@@ -67,7 +67,7 @@ export default function SideBar() {
                         <Button
                             text={<>
                                 <FaDownload className={"icon"}/>
-                                Download My CV
+                                Download my CV
                             </>}
                             color={"white"}
                         />

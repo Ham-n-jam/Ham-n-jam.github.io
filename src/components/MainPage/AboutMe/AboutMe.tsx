@@ -47,8 +47,8 @@ export default function AboutMe() {
                     <td>
                         <div className={styles.mobileOnlyHeader}>{techSkillsHeader}</div>
                         <div className={styles.flexBox}>
-                            <TechSkill skillName='React' icon={<FaReact />} />
                             <TechSkill skillName='Angular' icon={<FaAngular />} />
+                            <TechSkill skillName='React' icon={<FaReact />} />
                             <TechSkill skillName='Typescript' icon={<SiTypescript />} />
                             <TechSkill skillName='Javascript' icon={<SiJavascript />} />
                             <TechSkill skillName='CSS' icon={<FaCss3 />} />
@@ -77,7 +77,7 @@ export default function AboutMe() {
                     </th>
                     <td>
                         <div className={styles.mobileOnlyHeader}>{employmentHistoryHeader}</div>
-                        Vista Entertainment Solutions - Graduate Software Engineer
+                        Vista Entertainment Solutions - Software Engineer
                         <p/>
                         Pipers Patent Attorneys - Database Engineer Intern
                         <p/>

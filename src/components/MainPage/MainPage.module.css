@@ -60,8 +60,11 @@ h6 {
 }
 
 .angleGradientBg {
-    background: rgb(0,0,0);
-    background: linear-gradient(115deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: radial-gradient(
+        circle at 20% 15%,
+        rgba(28, 28, 28, 0.868) 50%,
+        transparent
+    );
 }
 
 .paragraph {

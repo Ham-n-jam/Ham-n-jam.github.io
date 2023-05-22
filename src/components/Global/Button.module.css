@@ -27,7 +27,8 @@
 .white {
     color: black;
     text-shadow: none;
-    background: linear-gradient(225deg, #ffffff 0%, #ececec 100%);
+    background: linear-gradient(225deg, #ffffff 0%, #f8f5f5 100%);
+    box-shadow: 0px 0px 5px #f8f8f8;
 }
 
 .white:hover {

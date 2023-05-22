@@ -10,8 +10,8 @@ export default function IncomeTicker() {
         title="Income Ticker"
         description={
             <>
-                <p>A fun little app I made that you can put on in the background at work.</p>
-                <p>Input your payment details and watch your income for the day slowly tick up as you work!
+                <p>A joke app I made that you can put on in the background at work.</p>
+                <p>Input your income rate and watch your total for the day slowly tick up as you work!
                     The ticker will take your off-days and lunch breaks into account so that it only ticks
                     over
                     while
