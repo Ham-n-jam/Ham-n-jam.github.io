@@ -33,11 +33,13 @@ export default function AboutMe() {
 
     return (
         <div className={styles.paragraph}>
-            <h2>Software Engineer</h2>
-            <p> Hi! I'm Alex, a motivated software engineer, passionate about software development and design.
-                I'm looking
-                to bring new and innovative ideas to the table.
-            </p>
+            <div className={styles.glass}>
+                <h2>Software Engineer</h2>
+                <p> Hi! I'm Alex, a motivated software engineer, passionate about software development and design.
+                    I'm looking
+                    to bring new and innovative ideas to the table.
+                </p>
+            </div>
             <table className={styles.table}>
                 <tbody>
                 <tr>

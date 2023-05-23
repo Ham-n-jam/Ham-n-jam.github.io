@@ -56,15 +56,17 @@ h6 {
     padding: 2.5em 1.5em;
     font-size: 1.1rem;
     color: white;
-    text-shadow: black 0 0 12px;
 }
 
-.angleGradientBg {
-    background: radial-gradient(
-        circle at 20% 15%,
-        rgba(28, 28, 28, 0.868) 50%,
-        transparent
-    );
+.glass {
+    padding: 20px 40px;
+
+    /* From https://css.glass */
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);    
 }
 
 .paragraph {

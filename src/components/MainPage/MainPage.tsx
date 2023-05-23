@@ -9,6 +9,7 @@ import PokeBuilder from "./Projects/ProjectInfo/PokeBuilder";
 import Tetrus from "./Projects/ProjectInfo/Tetrus";
 import AboutMe from "./AboutMe/AboutMe";
 import SectionHeadline from "./SectionHeadline";
+import CirclesBg from "../Global/CirclesBg/CirclesBg";
 
 export default function MainPage() {
     const allProjects = [
@@ -32,34 +33,37 @@ export default function MainPage() {
 
 
     return (
-        <div className={styles.body}>
-            <SectionHeadline id="about_me" title="About Me " />
-            <div className={`${styles.imageBg}`}
-                 style={{
-                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg.png'})`
-                 }}
-            >
-                <div className={`${styles.content} ${styles.angleGradientBg}`}>
-                    <AboutMe />
-                    <p/>
-                </div>
-            </div>
-
-            <SectionHeadline id="personal_projects" title="Personal Projects " />
-            {
-                allProjects.map(((project, index) => {
-                return (
-                    <div className={`${styles.imageBg}`}
-                         style={{
-                             backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
-                         }}
-                         key={index}
-                    >
-                        {project.component}
+        <>
+            <CirclesBg />
+            <div className={styles.body}>
+                <SectionHeadline id="about_me" title="About Me " />
+                <div className={`${styles.imageBg}`}
+                    style={{
+                        backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg.png'})`
+                    }}
+                >
+                    <div className={`${styles.content}`}>
+                        <AboutMe />
+                        <p/>
                     </div>
-                )
-                }))
-            }
-        </div>
+                </div>
+
+                <SectionHeadline id="personal_projects" title="Personal Projects " />
+                {
+                    allProjects.map(((project, index) => {
+                    return (
+                        <div className={`${styles.imageBg}`}
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
+                            }}
+                            key={index}
+                        >
+                            {project.component}
+                        </div>
+                    )
+                    }))
+                }
+            </div>
+        </>
     );
 }

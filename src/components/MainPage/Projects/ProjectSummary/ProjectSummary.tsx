@@ -14,7 +14,8 @@ interface ProjectSummaryProps {
 
 export default function ProjectSummary({title, subTitle, description, imageNames, imageFolder, isMirrored, links}: ProjectSummaryProps) {
 
-    const info = (<div className={styles.paragraph}>
+    const info = (
+    <div className={styles.paragraph}>
         <h2>{title}</h2>
         <h5>{subTitle}</h5>
         <p>{description}</p>
@@ -27,7 +28,8 @@ export default function ProjectSummary({title, subTitle, description, imageNames
                     </div>);
             })}
         </div>
-    </div>)
+    </div>
+    )
 
     const imageGallery = (<div className={styles.imageGallery}>
         <ImageGallery
