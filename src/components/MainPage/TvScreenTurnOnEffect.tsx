@@ -18,7 +18,7 @@ export default function TvScreenTurnOnEffect() {
             <div className={styles.inner}>
                 <h2 className={styles.text}>Alex Bell</h2>
                 <div className={styles.lineSeparator}/>
-                <h6 className={styles.text}>Software Engineer</h6>
+                <h6 className={styles.subheader}>Software Engineer</h6>
             </div>
         </div>);
 }

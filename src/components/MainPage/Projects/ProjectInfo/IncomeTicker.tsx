@@ -28,10 +28,6 @@ export default function IncomeTicker() {
                     text={"Check it out"}
                     color={"animated"}
                 />
-            </a>,
-            <a className={styles.whiteLink} href={"https://github.com/Ham-n-jam/income-ticker"}>
-                <FaGithub className={"icon"}/>
-                View GitHub repo
             </a>
         ]}
         isMirrored={true}

@@ -1,11 +1,9 @@
 .headline {
-    color: white;
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding: 1em 0;
-    text-align: center;
-    text-shadow: #363636 0 0 12px;
-    background: linear-gradient(195deg, #000000 0%, #222222 100%);
+    color: black;
+    font-weight: bolder;
+    font-size: 3.8rem;
+    padding: 1.8em 2vw 0.2em;
+    background-color: white;
 }
 
 a:hover, a:visited, a:link, a:active

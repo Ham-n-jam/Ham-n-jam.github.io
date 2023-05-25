@@ -11,7 +11,7 @@ export default function GoldenHourChronicles() {
         subTitle="(Work in progress)"
         description={
             <>
-                <p>A Zelda-like 2D top-down action adventure game.</p>
+                <p>An old-school Zelda-like 2D top-down action adventure game.</p>
                 <p>Follow Zach and his allies on a journey across the Kingdom of Eulyssia
                     to uncover the true nature of the world.</p>
                 <div className={styles.flexBox}>

@@ -1,6 +1,9 @@
 .paragraph {
     max-width: 40em;
     text-align: justify;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
 }
 
 .pairContainer {
@@ -8,8 +11,7 @@
     align-items: center;
     padding: 2.5em 1.5em;
     font-size: 1.1rem;
-    color: white;
-    text-shadow: black 0 0 12px;
+    color: black;
 }
 
 .imageGallery {
@@ -22,7 +24,6 @@
 .whiteLink {
     display: inline-flex;
     align-items: center;
-    color: white;
 }
 
 @media all and (min-width: 1100px) {

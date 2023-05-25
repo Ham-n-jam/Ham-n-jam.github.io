@@ -11,7 +11,7 @@ export default function Tetrus() {
         title="Tetrus"
         description={
             <>
-                <p>The classic block-stacker game with a twist.</p>
+                <p>My first crack at using the Godot Engine, it's the classic block-stacker game with a twist.</p>
                 <p>Enjoy hectic gameplay as 1-4 players all play on the same board simultaneously!</p>
                 <div className={styles.flexBox}>
                     <TechSkill skillName='Godot' icon={<SiGodotengine />} />
@@ -28,10 +28,6 @@ export default function Tetrus() {
                     color={"animated"}
                 />
             </a>,
-            <a className={styles.whiteLink} href={"https://github.com/Ham-n-jam/tetrus-game"}>
-                <FaGithub className={"icon"}/>
-                View GitHub repo
-            </a>
         ]}
         isMirrored={true}
     />

@@ -16,10 +16,6 @@
         width: var(--sideBarWidth);
     }
 
-    .contentMenu {
-        display: block;
-    }
-
     .verticalSpacer {
         height: 100%;
     }
@@ -103,10 +99,6 @@
         min-width: calc(100vw - var(--scrollBarWidth));
         height: var(--sideBarHeight);
         position: relative;
-    }
-
-    .contentMenu {
-        display: none;
     }
 
     .wrapper {

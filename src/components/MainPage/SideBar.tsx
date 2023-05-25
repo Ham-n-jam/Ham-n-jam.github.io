@@ -1,13 +1,13 @@
-import React from "react";
 import styles from "./SideBar.module.css";
 import {MdEmail} from "react-icons/md";
 import {MdPhone} from "react-icons/md";
 import {FaGithub} from "react-icons/fa";
 import {FaDownload} from "react-icons/fa";
-import ScrollToMenuItem from "../Global/ScrollToMenuItem";
 import Button from "../Global/Button";
 
 import "../../GlobalStyles.css"
+import ScrollToMenuItem from "./NavMenu/ScrollToMenuItem";
+import NavMenu from "./NavMenu/NavMenu";
 
 export default function SideBar() {
 
@@ -46,18 +46,7 @@ export default function SideBar() {
                     </div>
                 </div>
 
-                <div className={styles.contentMenu}>
-
-                    <div className={styles.jumpToWrapper}>
-                        <div className={styles.lineSeparator10}/>
-                        Jump To Section
-                        <div className={styles.lineSeparator70}/>
-                    </div>
-
-                    <ScrollToMenuItem href={"#about_me"} text={"About Me"}/>
-                    <ScrollToMenuItem href={"#personal_projects"} text={"Personal Projects"}/>
-
-                </div>
+                <NavMenu />
 
                 <div className={styles.verticalSpacer}/>
 
