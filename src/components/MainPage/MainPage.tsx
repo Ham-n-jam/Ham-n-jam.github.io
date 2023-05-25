@@ -32,28 +32,38 @@ export default function MainPage() {
 
 
     return (
-        <div className={styles.body}>
-            <SectionHeadline id="about" title="SOFTWARE ENGINEER " />
-            <div className={styles.content}>
-                <AboutMe />
-                <p/>
+        <>
+            <div className={styles.splashImgWrapper}>
+                <div className={styles.splashImg}
+                    style={{
+                        backgroundImage: `url(${process.env.PUBLIC_URL + '/images/splash.png'})`
+                    }}
+                ></div>
             </div>
+            
+            <div className={styles.body}>
+                <SectionHeadline id="about" title="SOFTWARE ENGINEER " />
+                <div className={styles.content}>
+                    <AboutMe />
+                    <p/>
+                </div>
 
-            <SectionHeadline id="personal_projects" title="PROJECTS " />
-            {
-                allProjects.map(((project, index) => {
-                return (
-                    <div className={`${styles.imageBg}`}
-                         style={{
-                             backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
-                         }}
-                         key={index}
-                    >
-                        {project.component}
-                    </div>
-                )
-                }))
-            }
-        </div>
+                <SectionHeadline id="personal_projects" title="PROJECTS " />
+                {
+                    allProjects.map(((project, index) => {
+                    return (
+                        <div className={`${styles.imageBg}`}
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
+                            }}
+                            key={index}
+                        >
+                            {project.component}
+                        </div>
+                    )
+                    }))
+                }
+            </div>
+        </>
     );
 }

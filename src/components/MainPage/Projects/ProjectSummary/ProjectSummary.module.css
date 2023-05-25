@@ -1,9 +1,12 @@
 .paragraph {
     max-width: 40em;
     text-align: justify;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
 
+.description > p {
+    color: rgb(106, 106, 106);
 }
 
 .pairContainer {
@@ -31,6 +34,10 @@
         flex-direction: row;
     }
 
+    .reverseOrder {
+        flex-direction: row-reverse;
+    }
+
     .paragraph {
         margin-left: 5%;
         margin-right: 5%;
@@ -41,6 +48,11 @@
     .pairContainer {
         flex-direction: column;
         font-size: 1.0rem;
+    }
+
+    .reverseOrder {
+        /** Use column on mobile for all projects **/
+        flex-direction: column;
     }
 
     .paragraph {

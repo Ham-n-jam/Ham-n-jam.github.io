@@ -6,7 +6,6 @@ import {FaDownload} from "react-icons/fa";
 import Button from "../Global/Button";
 
 import "../../GlobalStyles.css"
-import ScrollToMenuItem from "./NavMenu/ScrollToMenuItem";
 import NavMenu from "./NavMenu/NavMenu";
 
 export default function SideBar() {
@@ -46,9 +45,9 @@ export default function SideBar() {
                     </div>
                 </div>
 
-                <NavMenu />
-
-                <div className={styles.verticalSpacer}/>
+                <div className={styles.verticalSpacer}>
+                    <NavMenu />
+                </div>
 
                 <div className={styles.cvDownload}>
                     <a className={`${styles.link} ${styles.blackText}`}

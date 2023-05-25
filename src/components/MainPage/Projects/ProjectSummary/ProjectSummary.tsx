@@ -17,7 +17,7 @@ export default function ProjectSummary({title, subTitle, description, imageNames
     const info = (<div className={styles.paragraph}>
         <h2>{title}</h2>
         <h5>{subTitle}</h5>
-        <p>{description}</p>
+        <p className={styles.description}>{description}</p>
         <div>
             {links.map((link, idx) => {
                 return (
@@ -31,7 +31,7 @@ export default function ProjectSummary({title, subTitle, description, imageNames
 
     const imageGallery = (<div className={styles.imageGallery}>
         <ImageGallery
-            items={imageNames.map((imgName, idx) => (
+            items={imageNames.map((imgName) => (
                 {
                     original: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`,
                     thumbnail: `${process.env.PUBLIC_URL + '/images/' + imageFolder + '/' + imgName}`
@@ -44,8 +44,8 @@ export default function ProjectSummary({title, subTitle, description, imageNames
     </div>)
 
     return (
-        <div className={`${styles.pairContainer}`}>
-            {isMirrored ? [info, imageGallery] : [imageGallery, info]}
+        <div className={`${styles.pairContainer} ${isMirrored? styles.reverseOrder: ''}`}>
+            {[imageGallery, info]}
         </div>
     );
 }

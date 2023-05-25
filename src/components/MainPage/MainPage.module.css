@@ -19,6 +19,8 @@
 }
 
 .body {
+    padding-left: 6vw;
+    padding-right: 6vw;
     overflow-x: hidden;
     background-color: white;
 }
@@ -57,11 +59,18 @@ h6 {
     padding: 0 1.5em;
     font-size: 1.1rem;
     color: black;
-    background-color: white;
+    position: relative;
 }
 
 .paragraph {
-    max-width: 40em;
+    max-width: 50em;
+    min-width: 15em;
+    text-align: justify;
+}
+
+.infoParagraph {
+    color: rgb(106, 106, 106);
+    max-width: 35em;
     min-width: 15em;
     text-align: justify;
 }
@@ -72,6 +81,25 @@ h6 {
     font-size: 1.4rem;
     padding: 1em 0;
     text-align: center;
+}
+
+.splashImgWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    height: 60%;
+}
+
+.splashImg {
+    display: flex;
+    width: 28%;
+    height: 138%;
+    min-height: 500px;
+    max-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    perspective: 60px;
 }
 
 .imageBg {
