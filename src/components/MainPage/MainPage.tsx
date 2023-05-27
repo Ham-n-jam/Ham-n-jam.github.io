@@ -34,13 +34,13 @@ export default function MainPage() {
     return (
         <>
             <div className={styles.splashImgWrapper}>
-                <div className={styles.splashImg}
+                <div className={`${styles.splashImg} ${styles.hideOnMobile}`}
                     style={{
                         backgroundImage: `url(${process.env.PUBLIC_URL + '/images/splash.png'})`
                     }}
                 ></div>
             </div>
-            
+
             <div className={styles.body}>
                 <SectionHeadline id="about" title="SOFTWARE ENGINEER " />
                 <div className={styles.content}>

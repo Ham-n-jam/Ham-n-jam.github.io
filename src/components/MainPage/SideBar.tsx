@@ -2,7 +2,7 @@ import styles from "./SideBar.module.css";
 import {MdEmail} from "react-icons/md";
 import {MdPhone} from "react-icons/md";
 import {FaGithub} from "react-icons/fa";
-import {FaDownload} from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa";
 import Button from "../Global/Button";
 
 import "../../GlobalStyles.css"
@@ -15,11 +15,6 @@ export default function SideBar() {
                 className={styles.navbar}
             >
                 <div className={styles.wrapper}>
-                    <img
-                        className={styles.pfp}
-                        src={`${process.env.PUBLIC_URL}/images/profilePhoto.png`}
-                        alt={"Profile"}
-                    />
                     <div className={styles.bg}>
                         <div>
                             <div className={styles.name}>Alex Bell</div>
@@ -54,7 +49,7 @@ export default function SideBar() {
                        href={`${process.env.PUBLIC_URL}/files/Alex_Bell_CV.pdf`} download="Alex_Bell_CV">
                         <Button
                             text={<>
-                                <FaDownload className={"icon"}/>
+                                <FaFilePdf className={"icon"}/>
                                 Download my CV
                             </>}
                             color={"white"}
