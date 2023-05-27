@@ -7,8 +7,8 @@ interface SectionHeadlineProps {
 
 export default function SectionHeadline({id, title}: SectionHeadlineProps) {
     return (
-            <a id={id}>
-                <div className={`${styles.headline}`}>{title}</div>
-            </a>
+        <a id={id}>
+            <div className={`${styles.headline}`}>{title}</div>
+        </a>
     )
 }

@@ -32,34 +32,38 @@ export default function MainPage() {
 
 
     return (
-        <div className={styles.body}>
-            <SectionHeadline id="about_me" title="About Me " />
-            <div className={`${styles.imageBg}`}
-                 style={{
-                     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg.png'})`
-                 }}
-            >
-                <div className={`${styles.content} ${styles.angleGradientBg}`}>
+        <>
+            <div className={styles.splashImgWrapper}>
+                <div className={`${styles.splashImg} ${styles.hideOnMobile}`}
+                    style={{
+                        backgroundImage: `url(${process.env.PUBLIC_URL + '/images/splash.png'})`
+                    }}
+                ></div>
+            </div>
+
+            <div className={styles.body}>
+                <SectionHeadline id="about" title="SOFTWARE ENGINEER " />
+                <div className={styles.content}>
                     <AboutMe />
                     <p/>
                 </div>
-            </div>
 
-            <SectionHeadline id="personal_projects" title="Personal Projects " />
-            {
-                allProjects.map(((project, index) => {
-                return (
-                    <div className={`${styles.imageBg}`}
-                         style={{
-                             backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
-                         }}
-                         key={index}
-                    >
-                        {project.component}
-                    </div>
-                )
-                }))
-            }
-        </div>
+                <SectionHeadline id="personal_projects" title="PROJECTS " />
+                {
+                    allProjects.map(((project, index) => {
+                    return (
+                        <div className={`${styles.imageBg}`}
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + project.bgImage})`
+                            }}
+                            key={index}
+                        >
+                            {project.component}
+                        </div>
+                    )
+                    }))
+                }
+            </div>
+        </>
     );
 }

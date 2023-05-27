@@ -1,5 +1,4 @@
 import styles from "../MainPage.module.css";
-import React from "react";
 import {
     FaGraduationCap,
     FaBriefcase,
@@ -24,6 +23,7 @@ import {
 } from "react-icons/si";
 
 import TechSkill from "../../Global/TechSkill/TechSkill";
+import InfoCard from "../../Global/InfoCard/InfoCard";
 
 export default function AboutMe() {
     const techSkillsHeader = <div className={styles.pairContainer}><FaCode className={"icon"}/>Key Technical Skills</div>
@@ -33,10 +33,10 @@ export default function AboutMe() {
 
     return (
         <div className={styles.paragraph}>
-            <h2>Software Engineer</h2>
-            <p> Hi! I'm Alex, a motivated software engineer, passionate about software development and design.
-                I'm looking
-                to bring new and innovative ideas to the table.
+            <p className={styles.infoParagraph}>
+                I'm a dedicated and motivated software engineer, passionate about software development and design.
+                I love learning new things and diving headfirst into tricky problems while helping out my coworkers.
+                I'm currently based in Sydney.
             </p>
             <table className={styles.table}>
                 <tbody>
@@ -77,11 +77,11 @@ export default function AboutMe() {
                     </th>
                     <td>
                         <div className={styles.mobileOnlyHeader}>{employmentHistoryHeader}</div>
-                        Vista Entertainment Solutions - Software Engineer
-                        <p/>
-                        Pipers Patent Attorneys - Database Engineer Intern
-                        <p/>
-                        Motion Design - Junior Software Developer
+                        <div className={styles.flexBox}>
+                        <InfoCard title='Software Engineer' subTitle='Feb 2022 - May 2023' location='Vista Entertainment Solutions' />
+                        <InfoCard title='Database Engineer Intern' subTitle='Summer 2021 - 2022' location='Pipers Patent Attorneys' />
+                        <InfoCard title='Junior Software Developer' subTitle='Summer 2020 - 2021' location='Motion Design' />
+                        </div>
                     </td>
                 </tr>
 
@@ -92,10 +92,11 @@ export default function AboutMe() {
                         {educationHeader}
                     </th>
                     <td>
-                        <div className={styles.mobileOnlyHeader}>{educationHeader}</div>
-                        Bachelor of Software Engineering with First Class Honors at the University of Auckland
-                        <p/>
-                        Auckland Grammar School
+                        <div className={styles.mobileOnlyHeader}>{educationHeader}</div>  
+                        <div className={styles.flexBox}>
+                        <InfoCard title='Bachelor of Software Engineering' subTitle='With First Class Honors' location='University of Auckland' />
+                        <InfoCard title='A-Level Cambridge' subTitle='Maths, Physics, Graphics, Design' location='Auckland Grammar School' />
+                        </div>
                     </td>
                 </tr>
 
@@ -107,8 +108,8 @@ export default function AboutMe() {
                     </th>
                     <td>
                         <div className={styles.mobileOnlyHeader}>{hobbiesHeader}</div>
-                        Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
-                        Swimming and Video Editing.
+                        <p className={styles.infoParagraph}>Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
+                        Swimming and Video Editing.</p>
                     </td>
                 </tr>
                 </tbody>

@@ -16,10 +16,6 @@
         width: var(--sideBarWidth);
     }
 
-    .contentMenu {
-        display: block;
-    }
-
     .verticalSpacer {
         height: 100%;
     }
@@ -63,34 +59,11 @@
     border-radius: 8px;
 }
 
-.pfp {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
 .jumpToWrapper {
     display: flex;
     align-items: center;
     white-space: nowrap;
     font-size: 0.8em;
-}
-
-.lineSeparator10 {
-    height: 1px;
-    width: 10%;
-    background: lightgray;
-    margin: 10px;
-}
-
-.lineSeparator70 {
-    height: 1px;
-    width: 70%;
-    background: lightgray;
-    margin: 10px;
 }
 
 .cvDownload {
@@ -103,10 +76,6 @@
         min-width: calc(100vw - var(--scrollBarWidth));
         height: var(--sideBarHeight);
         position: relative;
-    }
-
-    .contentMenu {
-        display: none;
     }
 
     .wrapper {

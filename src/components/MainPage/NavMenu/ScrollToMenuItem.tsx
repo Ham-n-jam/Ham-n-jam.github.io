@@ -11,7 +11,7 @@ export default function ScrollToMenuItem({ href, text }: ScrollToMenuItemProps) 
     return (
         <a className={styles.a} href={href}>
             <div className={styles.wrapper}>
-                {"• " + text}
+                {text}
             </div>
             <div className={styles.lineSeparator} />
         </a>

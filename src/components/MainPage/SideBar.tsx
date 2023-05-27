@@ -1,13 +1,12 @@
-import React from "react";
 import styles from "./SideBar.module.css";
 import {MdEmail} from "react-icons/md";
 import {MdPhone} from "react-icons/md";
 import {FaGithub} from "react-icons/fa";
-import {FaDownload} from "react-icons/fa";
-import ScrollToMenuItem from "../Global/ScrollToMenuItem";
+import { FaFilePdf } from "react-icons/fa";
 import Button from "../Global/Button";
 
 import "../../GlobalStyles.css"
+import NavMenu from "./NavMenu/NavMenu";
 
 export default function SideBar() {
 
@@ -16,11 +15,6 @@ export default function SideBar() {
                 className={styles.navbar}
             >
                 <div className={styles.wrapper}>
-                    <img
-                        className={styles.pfp}
-                        src={`${process.env.PUBLIC_URL}/images/profilePhoto.png`}
-                        alt={"Profile"}
-                    />
                     <div className={styles.bg}>
                         <div>
                             <div className={styles.name}>Alex Bell</div>
@@ -46,27 +40,16 @@ export default function SideBar() {
                     </div>
                 </div>
 
-                <div className={styles.contentMenu}>
-
-                    <div className={styles.jumpToWrapper}>
-                        <div className={styles.lineSeparator10}/>
-                        Jump To Section
-                        <div className={styles.lineSeparator70}/>
-                    </div>
-
-                    <ScrollToMenuItem href={"#about_me"} text={"About Me"}/>
-                    <ScrollToMenuItem href={"#personal_projects"} text={"Personal Projects"}/>
-
+                <div className={styles.verticalSpacer}>
+                    <NavMenu />
                 </div>
-
-                <div className={styles.verticalSpacer}/>
 
                 <div className={styles.cvDownload}>
                     <a className={`${styles.link} ${styles.blackText}`}
                        href={`${process.env.PUBLIC_URL}/files/Alex_Bell_CV.pdf`} download="Alex_Bell_CV">
                         <Button
                             text={<>
-                                <FaDownload className={"icon"}/>
+                                <FaFilePdf className={"icon"}/>
                                 Download my CV
                             </>}
                             color={"white"}
