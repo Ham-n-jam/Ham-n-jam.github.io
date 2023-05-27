@@ -1,13 +1,13 @@
 import ProjectSummary from "../ProjectSummary/ProjectSummary";
 import styles from "../../MainPage.module.css";
 import {FaGithub, FaNode, FaReact} from "react-icons/fa";
-import React from "react";
 import TechSkill from "../../../Global/TechSkill/TechSkill";
 import {SiExpress, SiMongodb} from "react-icons/si";
 
 export default function PokeBuilder() {
     return <ProjectSummary
         title="PokéBuilder"
+        release="2021"
         description={
             <>
                 <p>A modern webapp take on a PokéDex from the Pokémon video game series I made with a few friends

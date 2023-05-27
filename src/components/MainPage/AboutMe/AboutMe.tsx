@@ -33,8 +33,10 @@ export default function AboutMe() {
 
     return (
         <div className={styles.paragraph}>
-            <p className={styles.infoParagraph}> I'm a dedicated and motivated software engineer, passionate about software development and design.
-                I love diving headfirst into tricky problems and solving them while helping out my coworkers.
+            <p className={styles.infoParagraph}>
+                I'm a dedicated and motivated software engineer, passionate about software development and design.
+                I love learning new things and diving headfirst into tricky problems while helping out my coworkers.
+                I'm currently based in Sydney.
             </p>
             <table className={styles.table}>
                 <tbody>

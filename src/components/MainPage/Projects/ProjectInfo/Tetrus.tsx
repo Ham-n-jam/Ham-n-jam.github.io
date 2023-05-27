@@ -1,7 +1,6 @@
 import ProjectSummary from "../ProjectSummary/ProjectSummary";
 import styles from "../../MainPage.module.css";
 import {FaGithub} from "react-icons/fa";
-import React from "react";
 import Button from "../../../Global/Button";
 import TechSkill from "../../../Global/TechSkill/TechSkill";
 import {SiAseprite, SiGodotengine} from "react-icons/si";
@@ -9,6 +8,7 @@ import {SiAseprite, SiGodotengine} from "react-icons/si";
 export default function Tetrus() {
     return <ProjectSummary
         title="Tetrus"
+        release="2021"
         description={
             <>
                 <p>My first crack at using the Godot Engine, it's the classic block-stacker game with a twist.</p>

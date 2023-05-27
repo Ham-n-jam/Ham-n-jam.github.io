@@ -1,13 +1,13 @@
 import ProjectSummary from "../ProjectSummary/ProjectSummary";
 import styles from "../../MainPage.module.css";
 import {FaGithub, FaReact} from "react-icons/fa";
-import React from "react";
 import Button from "../../../Global/Button";
 import TechSkill from "../../../Global/TechSkill/TechSkill";
 
 export default function IncomeTicker() {
     return <ProjectSummary
         title="Income Ticker"
+        release="2022"
         description={
             <>
                 <p>A joke app I made that you can put on in the background at work.</p>
