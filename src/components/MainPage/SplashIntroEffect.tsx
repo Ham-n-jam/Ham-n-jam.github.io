@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from "react";
-import styles from "./TvScreenTurnOnEffect.module.css";
+import {useEffect, useState} from "react";
+import styles from "./SplashIntroEffect.module.css";
 
-export default function TvScreenTurnOnEffect() {
+export default function SplashIntroEffect() {
     const [style, setStyle] = useState({});
 
     useEffect(() => {
         setTimeout(function () {
             setStyle({ display: 'none' });
-        }, 1010);
+        }, 2000);
     }, []);
 
     return (

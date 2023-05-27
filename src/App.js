@@ -1,12 +1,12 @@
 import './App.css';
 import MainPage from "./components/MainPage/MainPage";
 import SideBar from "./components/MainPage/SideBar";
-import TvScreenTurnOnEffect from "./components/MainPage/TvScreenTurnOnEffect";
+import SplashIntroEffect from "./components/MainPage/SplashIntroEffect";
 
 function App() {
   return (
     <div>
-        <TvScreenTurnOnEffect />
+        <SplashIntroEffect />
         <SideBar />
         <div className="App">
             <MainPage />
