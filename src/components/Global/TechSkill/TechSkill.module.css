@@ -19,3 +19,10 @@
     align-items: center;
     padding-right: 0.4rem;
 }
+
+@media all and (max-width: 1099px) {
+    .roundedBox {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}

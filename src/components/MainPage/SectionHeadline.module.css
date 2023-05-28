@@ -10,3 +10,9 @@ a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
 }
+
+@media all and (max-width: 800px) {
+    .headline {
+        font-size: 2.4rem;
+    }
+}

@@ -32,3 +32,28 @@
 
     text-align: end;
 }
+
+
+@media all and (max-width: 800px) {
+    .wrapper {
+        width: 240px;
+    }
+    
+    .roundedBox {
+        padding: 0.6rem;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+    
+    .title {
+        font-size: 0.9rem;
+    }
+    
+    .subTitle {
+        font-size: 0.7rem;
+    }
+    
+    .location {
+        font-size: 0.9rem;
+    }
+}

@@ -15,6 +15,11 @@ export default function SideBar() {
                 className={styles.navbar}
             >
                 <div className={styles.wrapper}>
+                    <img
+                        className={`${styles.pfp} ${styles.onlyOnMobile}`}
+                        src={`${process.env.PUBLIC_URL}/images/profilePhoto.png`}
+                        alt={"Profile"}
+                    />
                     <div className={styles.bg}>
                         <div>
                             <div className={styles.name}>Alex Bell</div>
