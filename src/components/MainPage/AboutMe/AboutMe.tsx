@@ -108,7 +108,7 @@ export default function AboutMe() {
                     </th>
                     <td>
                         <div className={styles.mobileOnlyHeader}>{hobbiesHeader}</div>
-                        <p className={styles.infoParagraph}>Cycling, Skiing, Digital Art/Animation, Sketching, Gaming, Game Design,
+                        <p className={styles.infoParagraph}>Cycling, Skiing, Digital Art and Animation, Sketching, Gaming, Game Design,
                         Swimming and Video Editing.</p>
                     </td>
                 </tr>
