@@ -78,7 +78,7 @@ export default function AboutMe() {
                     <td>
                         <div className={styles.mobileOnlyHeader}>{employmentHistoryHeader}</div>
                         <div className={styles.flexBox}>
-                        <InfoCard title='Software Engineer' subTitle='Feb 2022 - May 2023' location='Vista Entertainment Solutions' />
+                        <InfoCard title='Software Engineer' subTitle='Feb 2022 - June 2023' location='Vista Entertainment Solutions' />
                         <InfoCard title='Database Engineer Intern' subTitle='Summer 2021 - 2022' location='Pipers Patent Attorneys' />
                         <InfoCard title='Junior Software Developer' subTitle='Summer 2020 - 2021' location='Motion Design' />
                         </div>
