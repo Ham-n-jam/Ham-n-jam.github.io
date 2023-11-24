@@ -131,6 +131,10 @@ h6 {
     color: #3c9ae7;
 }
 
+.whiteLink:hover {
+    text-decoration: underline;
+}
+
 .buttonLink {
     display: inline-flex;
     align-items: center;
