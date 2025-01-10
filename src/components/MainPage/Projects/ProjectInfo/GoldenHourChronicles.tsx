@@ -20,7 +20,7 @@ export default function GoldenHourChronicles() {
                 </div>
             </>}
         imageFolder={"ghc"}
-        imageNames = {["gameplay.png", "dialogue.png", "loadGame.png", "silhouettes.png"]}
+        imageNames = {["goldenhour2024.png", "gameplay2024.png", "dialogue2024.png", "loadGame2024.png", "title2024.png"]}
         links={[
             <a className={styles.whiteLink} href={"https://twitter.com/GoldenHourC"}>
                 <FaTwitter className={"icon"}/>
