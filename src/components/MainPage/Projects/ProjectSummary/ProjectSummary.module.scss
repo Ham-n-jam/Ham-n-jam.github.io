@@ -1,83 +1,83 @@
-@import '../../../../ThemePalette.scss';
+@import "../../../../ThemePalette.scss";
 
 .titleContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .subTitle {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.2rem;
-    padding: 4px 6px;
-    margin-left: 12px;
-    background: $ab-color-pill-light-bg;
-    color: $ab-color-text-primary-dark-bg;
-    border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 4px 6px;
+  margin-left: 12px;
+  background: $ab-color-pill-light-bg;
+  color: $ab-color-text-primary-dark-bg;
+  border-radius: 4px;
 }
 
 .paragraph {
-    max-width: 40em;
-    text-align: justify;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+  max-width: 40em;
+  text-align: justify;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .description > p {
-    color: $ab-color-text-secondary-light-bg;
+  color: $ab-color-text-secondary-light-bg;
 }
 
 .pairContainer {
-    display: flex;
-    align-items: center;
-    padding: 2.5em 0;
-    font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  padding: 2.5em 0;
+  font-size: 1.1rem;
 }
 
 .imageGallery {
-    width: 50%;
-    min-width: 50%;
-    height: auto;
-    padding: 30px;
+  width: 50%;
+  min-width: 50%;
+  height: auto;
+  padding: 30px;
 }
 
 @media all and (min-width: 1100px) {
-    .pairContainer {
-        flex-direction: row;
-    }
+  .pairContainer {
+    flex-direction: row;
+  }
 
-    .reverseOrder {
-        flex-direction: row-reverse;
-    }
+  .reverseOrder {
+    flex-direction: row-reverse;
+  }
 
-    .paragraph {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+  .paragraph {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media all and (max-width: 1099px) {
-    .pairContainer {
-        flex-direction: column;
-        font-size: 1.0rem;
-    }
+  .pairContainer {
+    flex-direction: column;
+    font-size: 1rem;
+  }
 
-    .reverseOrder {
-        /** Use column on mobile for all projects **/
-        flex-direction: column;
-    }
+  .reverseOrder {
+    /** Use column on mobile for all projects **/
+    flex-direction: column;
+  }
 
-    .paragraph {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left;
-    }
+  .paragraph {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 
-    .imageGallery {
-        width: 100%;
-        max-width: 40em;
-    }
+  .imageGallery {
+    width: 100%;
+    max-width: 40em;
+  }
 }

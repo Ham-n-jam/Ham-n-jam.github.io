@@ -1,30 +1,30 @@
-@import '../../../ThemePalette.scss';
+@import "../../../ThemePalette.scss";
 
 .wrapper {
-    padding-right: 0.6rem;
-    padding-bottom: 0.4rem;
+  padding-right: 0.6rem;
+  padding-bottom: 0.4rem;
 }
 
 .roundedBox {
-    display: flex;
-    align-items: center;
-    padding: 0.4rem 0.8rem 0.4rem 0.6rem;
-    background: color-mix(in srgb, $ab-color-body-bg 30%, transparent);
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(14.5px);
-    -webkit-backdrop-filter: blur(14.5px);
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem 0.4rem 0.6rem;
+  background: color-mix(in srgb, $ab-color-body-bg 30%, transparent);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    padding-right: 0.4rem;
+  display: flex;
+  align-items: center;
+  padding-right: 0.4rem;
 }
 
 @media all and (max-width: 1099px) {
-    .roundedBox {
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-    }
+  .roundedBox {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }

@@ -4,20 +4,41 @@ $ab-color-body-bg: var(--ab-color-body-bg, #fff);
 $ab-color-body-bg-contrast: var(--ab-color-body-bg-contrast, #000);
 $ab-color-sidenav-bg: linear-gradient(225deg, #000000 0%, #222222 100%);
 
-$ab-color-primary-light: var(--ab-color-primary-light, color-mix(in srgb, $color-primary 80%, white));
+$ab-color-primary-light: var(
+  --ab-color-primary-light,
+  color-mix(in srgb, $color-primary 80%, white)
+);
 $ab-color-primary: var(--ab-color-primary, $color-primary);
-$ab-color-primary-medium: var(--ab-color-primary-medium, color-mix(in srgb, $color-primary 80%, black));
-$ab-color-primary-dark: var(--ab-color-primary-dark, color-mix(in srgb, $color-primary 60%, black));
+$ab-color-primary-medium: var(
+  --ab-color-primary-medium,
+  color-mix(in srgb, $color-primary 80%, black)
+);
+$ab-color-primary-dark: var(
+  --ab-color-primary-dark,
+  color-mix(in srgb, $color-primary 60%, black)
+);
 $ab-color-primary-hue-shifted: var(--ab-color-primary-hue-shifted, #2a5aca);
 
 $ab-color-text-primary-light-bg: var(--ab-color-text-primary-light-bg, black);
-$ab-color-text-secondary-light-bg: var(--ab-color-text-secondary-light-bg, #6a6a6a);
+$ab-color-text-secondary-light-bg: var(
+  --ab-color-text-secondary-light-bg,
+  #6a6a6a
+);
 $ab-color-text-primary-dark-bg: var(--ab-color-text-primary-dark-bg, white);
-$ab-color-text-secondary-dark-bg: var(--ab-color-text-secondary-dark-bg, lightgray);
+$ab-color-text-secondary-dark-bg: var(
+  --ab-color-text-secondary-dark-bg,
+  lightgray
+);
 
 $ab-color-button-base-box-shadow: #262626;
 $ab-color-button-primary-text: #fff;
-$ab-color-button-primary-bg: linear-gradient(-45deg, $ab-color-primary-light, $ab-color-primary, $ab-color-primary-medium, $ab-color-primary-dark);
+$ab-color-button-primary-bg: linear-gradient(
+  -45deg,
+  $ab-color-primary-light,
+  $ab-color-primary,
+  $ab-color-primary-medium,
+  $ab-color-primary-dark
+);
 $ab-color-button-primary-bg-hover: $ab-color-primary-medium;
 $ab-color-button-primary-bg-active: $ab-color-primary-dark;
 $ab-color-button-sidenav-contrast-text: #000;

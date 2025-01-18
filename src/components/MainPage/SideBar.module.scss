@@ -1,117 +1,117 @@
-@import '../../ThemePalette.scss';
+@import "../../ThemePalette.scss";
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: $ab-color-sidenav-bg;
-    position: fixed;
-    overflow-x: hidden;
-    z-index: 1;
-    color: $ab-color-text-primary-dark-bg;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $ab-color-sidenav-bg;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  color: $ab-color-text-primary-dark-bg;
 }
 
 @media all and (min-width: 1100px) {
-    .navbar {
-        min-height: 100vh;
-        width: var(--sideBarWidth);
-    }
+  .navbar {
+    min-height: 100vh;
+    width: var(--sideBarWidth);
+  }
 
-    .verticalSpacer {
-        height: 100%;
-    }
+  .verticalSpacer {
+    height: 100%;
+  }
 }
 
 .wrapper {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    margin: 20px 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 20px 10px;
 }
 
 .bg {
-    text-align: left;
-    padding: 10px 20px;
-    font-size: 1rem;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
 .pfp {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .name {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .info {
-    color: $ab-color-text-secondary-dark-bg;
-    margin-bottom: 10px;
+  color: $ab-color-text-secondary-dark-bg;
+  margin-bottom: 10px;
 }
 
 .link {
-    text-decoration: none;
-    color: $ab-color-text-secondary-dark-bg;
-    display: inline-flex;
-    align-items: center;
+  text-decoration: none;
+  color: $ab-color-text-secondary-dark-bg;
+  display: inline-flex;
+  align-items: center;
 }
 
 .blackText {
-    color: $ab-color-text-primary-light-bg;
-    display: inline-block;
-    border-radius: 8px;
+  color: $ab-color-text-primary-light-bg;
+  display: inline-block;
+  border-radius: 8px;
 }
 
 .jumpToWrapper {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.8em;
 }
 
 .cvDownload {
-    margin: 10px 20px 20px 20px;
+  margin: 10px 20px 20px 20px;
 }
 
 .onlyOnMobile {
-    display: none;
+  display: none;
 }
 
 /* Switch the sidebar to be a top bar when the screen size is small */
 @media all and (max-width: 1099px) {
-    .onlyOnMobile {
-        display: inherit;
-    }
+  .onlyOnMobile {
+    display: inherit;
+  }
 
-    .navbar {
-        min-width: calc(100vw - var(--scrollBarWidth));
-        height: var(--sideBarHeight);
-        position: relative;
-    }
+  .navbar {
+    min-width: calc(100vw - var(--scrollBarWidth));
+    height: var(--sideBarHeight);
+    position: relative;
+  }
 
-    .wrapper {
-        justify-content: center;
-    }
+  .wrapper {
+    justify-content: center;
+  }
 
-    .cvDownload {
-        justify-content: center;
-        display: flex;
-    }
+  .cvDownload {
+    justify-content: center;
+    display: flex;
+  }
 
-    .verticalSpacer {
-        height: 0%;
-    }
+  .verticalSpacer {
+    height: 0%;
+  }
 
-    .bg {
-        font-size: 1.0rem;
-    }
+  .bg {
+    font-size: 1rem;
+  }
 
-    .name {
-        font-size: 1.2rem;
-    }
+  .name {
+    font-size: 1.2rem;
+  }
 }
