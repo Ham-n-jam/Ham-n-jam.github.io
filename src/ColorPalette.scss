@@ -1,6 +1,6 @@
 @import "./ColorConsts.scss";
 
-$ab-color-body-bg: var(--ab-color-body-bg, #fff);
+$ab-color-body-bg: var(--ab-color-body-bg, #e7e7e7);
 $ab-color-body-bg-contrast: var(--ab-color-body-bg-contrast, #222222);
 $ab-color-sidenav-bg: var(--ab-color-sidenav-bg, #222222);
 $ab-color-elevation-box-shadow: var(--ab-color-elevation-box-shadow, #22222225);
@@ -33,22 +33,28 @@ $ab-color-text-secondary-dark-bg: var(
 
 $ab-color-button-base-box-shadow: #262626;
 $ab-color-button-primary-text: #fff;
-$ab-color-button-primary-bg: linear-gradient(
-  -45deg,
-  $ab-color-primary-light,
-  $ab-color-primary,
-  $ab-color-primary-medium,
-  $ab-color-primary-dark
-);
+$ab-color-button-primary-bg: $ab-color-primary;
+$ab-color-button-primary-bg-hue-shifted: $ab-color-primary-hue-shifted;
 $ab-color-button-primary-bg-hover: $ab-color-primary-medium;
 $ab-color-button-primary-bg-active: $ab-color-primary-dark;
-$ab-color-button-sidenav-contrast-text: #222222;
-$ab-color-button-sidenav-contrast-bg: #fff;
-$ab-color-button-sidenav-contrast-bg-hover: $ab-color-primary-light;
-$ab-color-button-sidenav-contrast-bg-active: $ab-color-primary;
+$ab-color-button-light-text: #222222;
+$ab-color-button-light-bg: #fff;
+$ab-color-button-light-bg-hover: $ab-color-primary-light;
+$ab-color-button-light-bg-active: $ab-color-primary;
+
+$ab-color-link-button-primary: var(
+  --ab-color-link-button-primary,
+  $ab-color-button-primary-bg
+);
+$ab-color-link-button-primary-focus: var(
+  --ab-color-link-button-primary-focus,
+  color-mix(in srgb, $ab-color-link-button-primary 60%, black)
+);
 
 $ab-color-pill-light-bg: #0000005f;
 $ab-color-pill-light-text: $ab-color-text-primary-dark-bg;
 
 $ab-color-line-separator: color-mix(in srgb, black 30%, transparent);
 $ab-color-line-separator-dark-bg: color-mix(in srgb, white 30%, transparent);
+
+$ab-theme-transition-duration: 0.8s;

@@ -46,6 +46,7 @@ export default function GoldenHourChronicles() {
           Follow GHC on Twitter
         </a>,
       ]}
+      themeClassname="golden-hour-chronicles"
     />
   );
 }

@@ -1,4 +1,4 @@
-body {
+body.tetrus {
   --ab-color-primary: #de902b;
   --ab-color-primary-hue-shifted: #c95824;
   --ab-color-body-bg: #5a3549;
@@ -9,18 +9,33 @@ body {
   --ab-color-text-secondary-dark-bg: #e9caba;
 }
 
-body {
-  --ab-color-primary: #341eff;
-  --ab-color-primary-hue-shifted: #702ffc;
-  --ab-color-body-bg: #bbecff;
-  --ab-color-sidenav-bg: #29485a;
-  --ab-color-text-primary-light-bg: #242424;
-  --ab-color-text-secondary-light-bg: #3e3e3e;
+body.pokebuilder {
+  --ab-color-primary: #7162ff;
+  --ab-color-primary-hue-shifted: #9b4eff;
+  --ab-color-link-button-primary: #f9a79f;
+  // --ab-color-body-bg: #436b70;
+  // --ab-color-sidenav-bg: #1b2f3b;
+  --ab-color-body-bg: #6d3535;
+  --ab-color-sidenav-bg: #451d1a;
+  --ab-color-text-primary-light-bg: #f7f2f2;
+  --ab-color-text-secondary-light-bg: #e0cece;
   --ab-color-text-primary-dark-bg: #ebebeb;
   --ab-color-text-secondary-dark-bg: #e9caba;
 }
 
-body {
+body.income-ticker {
+  // --ab-color-primary: #dc9f42;
+  // --ab-color-primary-hue-shifted: #c17f41;
+  --ab-color-body-bg: #353535;
+  --ab-color-sidenav-bg: #202020;
+  --ab-color-text-primary-light-bg: #e8e8e8;
+  --ab-color-text-secondary-light-bg: #bdbdbd;
+  --ab-color-text-primary-dark-bg: #eae4bc;
+  --ab-color-text-secondary-dark-bg: #b7af8c;
+  --ab-color-elevation-box-shadow: #1212128b;
+}
+
+body.golden-hour-chronicles {
   --ab-color-primary: #dc9f42;
   --ab-color-primary-hue-shifted: #c17f41;
   --ab-color-body-bg: #31261d;

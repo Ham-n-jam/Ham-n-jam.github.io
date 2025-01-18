@@ -42,6 +42,7 @@ export default function Tetrus() {
         </a>,
       ]}
       isMirrored={true}
+      themeClassname="tetrus"
     />
   );
 }

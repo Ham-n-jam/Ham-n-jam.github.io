@@ -22,7 +22,7 @@ export default function IncomeTicker() {
           <div className={styles.flexBox}>
             <TechSkill skillName="React" icon={<FaReact />} />
             <TechSkill skillName="GitHub Pages" icon={<FaGithub />} />
-          </div>{" "}
+          </div>
         </>
       }
       imageFolder={"income-ticker"}
@@ -36,6 +36,7 @@ export default function IncomeTicker() {
         </a>,
       ]}
       isMirrored={true}
+      themeClassname="income-ticker"
     />
   );
 }

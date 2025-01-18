@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: $ab-color-sidenav-bg;
+  background-color: $ab-color-sidenav-bg;
+  transition: background-color $ab-theme-transition-duration;
   position: fixed;
   overflow-x: hidden;
   z-index: 1;

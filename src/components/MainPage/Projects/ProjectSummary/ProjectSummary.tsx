@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement, useEffect, useRef } from "react";
 import styles from "./ProjectSummary.module.scss";
 import ImageGallery from "react-image-gallery";
 
@@ -10,6 +10,7 @@ interface ProjectSummaryProps {
   imageFolder: string;
   isMirrored?: boolean;
   links: ReactElement[];
+  themeClassname?: string;
 }
 
 export default function ProjectSummary({
@@ -20,6 +21,7 @@ export default function ProjectSummary({
   imageFolder,
   isMirrored,
   links,
+  themeClassname,
 }: ProjectSummaryProps) {
   const info = (
     <div className={styles.paragraph}>
@@ -61,11 +63,37 @@ export default function ProjectSummary({
     </div>
   );
 
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const containerRefCurrent = containerRef.current;
+    if (!containerRefCurrent) {
+      return;
+    }
+    const onIntersection = () => {
+      document.body.className = themeClassname ?? "";
+    };
+    const options: IntersectionObserverInit = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.9,
+    };
+    const observer = new IntersectionObserver(onIntersection, options);
+    observer.observe(containerRefCurrent);
+
+    return () => {
+      if (containerRefCurrent) {
+        observer.unobserve(containerRefCurrent);
+      }
+    };
+  }, [containerRef, themeClassname]);
+
   return (
     <div
       className={`${styles.pairContainer} ${
         isMirrored ? styles.reverseOrder : ""
       }`}
+      ref={containerRef}
     >
       {[imageGallery, info]}
     </div>

@@ -11,7 +11,6 @@ import {
   FaPython,
 } from "react-icons/fa";
 import {
-  SiCsharp,
   SiPostgresql,
   SiDotnet,
   SiKotlin,
@@ -25,6 +24,7 @@ import {
 
 import TechSkill from "../../Global/TechSkill/TechSkill";
 import InfoCard from "../../Global/InfoCard/InfoCard";
+import { useEffect, useRef } from "react";
 
 export default function AboutMe() {
   const techSkillsHeader = (
@@ -52,8 +52,33 @@ export default function AboutMe() {
     </div>
   );
 
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const containerRefCurrent = containerRef.current;
+    if (!containerRefCurrent) {
+      return;
+    }
+    const onIntersection = () => {
+      document.body.className = "";
+    };
+    const options: IntersectionObserverInit = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.9,
+    };
+    const observer = new IntersectionObserver(onIntersection, options);
+    observer.observe(containerRefCurrent);
+
+    return () => {
+      if (containerRefCurrent) {
+        observer.unobserve(containerRefCurrent);
+      }
+    };
+  }, [containerRef]);
+
   return (
-    <div className={styles.paragraph}>
+    <div className={styles.paragraph} ref={containerRef}>
       <p className={styles.infoParagraph}>
         I'm a dedicated and motivated software engineer, passionate about
         software development and design. I love learning new things and diving
@@ -73,8 +98,7 @@ export default function AboutMe() {
                 <TechSkill skillName="Javascript" icon={<SiJavascript />} />
                 <TechSkill skillName="CSS" icon={<FaCss3 />} />
                 <TechSkill skillName="Java" icon={<FaJava />} />
-                <TechSkill skillName="C#" icon={<SiCsharp />} />
-                <TechSkill skillName=".NET" icon={<SiDotnet />} />
+                <TechSkill skillName=".NET / C#" icon={<SiDotnet />} />
                 <TechSkill skillName="SQL" icon={<SiPostgresql />} />
                 <TechSkill skillName="Kotlin" icon={<SiKotlin />} />
                 <TechSkill skillName="GDScript" icon={<SiGodotengine />} />
@@ -101,6 +125,11 @@ export default function AboutMe() {
                 {employmentHistoryHeader}
               </div>
               <div className={styles.flexBox}>
+                <InfoCard
+                  title="Software Engineer"
+                  subTitle="June 2023 - Present"
+                  location="Renewtrak"
+                />
                 <InfoCard
                   title="Software Engineer"
                   subTitle="Feb 2022 - June 2023"

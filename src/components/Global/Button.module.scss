@@ -17,16 +17,16 @@
 }
 
 .white {
-  color: $ab-color-button-sidenav-contrast-text;
-  background-color: $ab-color-button-sidenav-contrast-bg;
-}
+  color: $ab-color-button-light-text;
+  background-color: $ab-color-button-light-bg;
 
-.white:hover {
-  background-color: $ab-color-button-sidenav-contrast-bg-hover;
-}
+  &:hover {
+    background-color: $ab-color-button-light-bg-hover;
+  }
 
-.white:active {
-  background-color: $ab-color-button-sidenav-contrast-bg-active;
+  &:active {
+    background-color: $ab-color-button-light-bg-active;
+  }
 }
 
 .animated {
@@ -52,10 +52,10 @@
 @keyframes primary-pulse {
   0%,
   100% {
-    background-color: $ab-color-primary;
+    background-color: $ab-color-button-primary-bg;
   }
   50% {
-    background-color: $ab-color-primary-hue-shifted;
+    background-color: $ab-color-button-primary-bg-hue-shifted;
   }
 }
 

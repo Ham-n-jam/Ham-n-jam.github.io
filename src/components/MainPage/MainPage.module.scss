@@ -25,6 +25,7 @@
   padding-right: 6vw;
   overflow-x: hidden;
   background-color: $ab-color-body-bg;
+  transition: background-color $ab-theme-transition-duration;
   color: $ab-color-text-primary-light-bg;
 }
 
@@ -77,7 +78,12 @@ h6 {
 
 .infoParagraph {
   color: $ab-color-text-secondary-light-bg;
-  background: linear-gradient(180deg, $ab-color-body-bg 0%, transparent 125%);
+  background-color: linear-gradient(
+    180deg,
+    $ab-color-body-bg 0%,
+    transparent 125%
+  );
+  transition: background-color $ab-theme-transition-duration;
   max-width: 35em;
   min-width: 15em;
   text-align: justify;
@@ -103,6 +109,7 @@ h6 {
   background-size: auto 100%;
   background-blend-mode: multiply;
   background-color: $ab-color-body-bg;
+  transition: background-color $ab-theme-transition-duration;
   position: absolute;
 }
 
@@ -110,6 +117,7 @@ h6 {
   background-attachment: fixed;
   background-blend-mode: multiply;
   background-color: $ab-color-body-bg;
+  transition: background-color $ab-theme-transition-duration;
 }
 
 .pairContainer {
@@ -128,7 +136,7 @@ h6 {
 .whiteLink {
   display: inline-flex;
   align-items: center;
-  color: $ab-color-primary;
+  color: $ab-color-link-button-primary;
 }
 
 .whiteLink:hover {
@@ -136,7 +144,7 @@ h6 {
 }
 
 .whiteLink:focus {
-  color: $ab-color-primary-dark;
+  color: $ab-color-link-button-primary-focus;
 }
 
 .buttonLink {

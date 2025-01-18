@@ -46,6 +46,7 @@ export default function PokeBuilder() {
           View GitHub repo
         </a>,
       ]}
+      themeClassname="pokebuilder"
     />
   );
 }
