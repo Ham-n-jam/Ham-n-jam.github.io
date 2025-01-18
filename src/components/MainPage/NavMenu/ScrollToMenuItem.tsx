@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ScrollToMenuItem.module.css";
+import styles from "./ScrollToMenuItem.module.scss";
 
 interface ScrollToMenuItemProps {
     href: string,

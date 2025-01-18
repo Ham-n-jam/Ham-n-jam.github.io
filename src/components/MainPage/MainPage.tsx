@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./MainPage.module.css";
+import styles from "./MainPage.module.scss";
 
 import "react-image-gallery/styles/css/image-gallery.css";
-import "../../GlobalStyles.css"
+import "../../GlobalStyles.scss"
 import GoldenHourChronicles from "./Projects/ProjectInfo/GoldenHourChronicles";
 import IncomeTicker from "./Projects/ProjectInfo/IncomeTicker";
 import PokeBuilder from "./Projects/ProjectInfo/PokeBuilder";

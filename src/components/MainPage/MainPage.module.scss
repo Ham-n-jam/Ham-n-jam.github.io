@@ -1,3 +1,5 @@
+@import '../../ThemePalette.scss';
+
 .table {
     text-align: left;
     border-spacing: 1.2rem 1rem;
@@ -15,14 +17,15 @@
 .lineSeparator {
     height: 1px;
     width: 90%;
-    background: lightgray;
+    background: $ab-color-line-separator;
 }
 
 .body {
     padding-left: 6vw;
     padding-right: 6vw;
     overflow-x: hidden;
-    background-color: white;
+    background-color: $ab-color-body-bg;
+    color: $ab-color-text-primary-light-bg;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -58,7 +61,6 @@ h6 {
 .content {
     padding: 0 1.5em;
     font-size: 1.1rem;
-    color: black;
     position: relative;
 }
 
@@ -69,24 +71,14 @@ h6 {
 }
 
 .infoParagraph {
-    color: rgb(106, 106, 106);
-    background: rgba(255, 255, 255, 0.3);
+    color: $ab-color-text-secondary-light-bg;
+    background: linear-gradient(180deg, $ab-color-body-bg 0%, transparent 125%);
     max-width: 35em;
     min-width: 15em;
     text-align: justify;
     padding-right: 16px;
     padding-bottom: 16px;
-    border-radius: 20px;
-    backdrop-filter: blur(14.5px);
-    -webkit-backdrop-filter: blur(14.5px);
-}
-
-.whiteSeparator {
-    color: white;
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding: 1em 0;
-    text-align: center;
+    border-radius: 8px;
 }
 
 .splashImgWrapper {
@@ -128,7 +120,7 @@ h6 {
 .whiteLink {
     display: inline-flex;
     align-items: center;
-    color: #3c9ae7;
+    color: $ab-color-primary;
 }
 
 .whiteLink:hover {
@@ -168,10 +160,6 @@ h6 {
 
     .content {
         font-size: 1.0rem;
-    }
-
-    .whiteSeparator {
-        font-size: 1.2rem;
     }
 
     .infoParagraph {

@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import styles from "./SplashIntroEffect.module.css";
+import styles from "./SplashIntroEffect.module.scss";
 
 export default function SplashIntroEffect() {
     const [style, setStyle] = useState({});

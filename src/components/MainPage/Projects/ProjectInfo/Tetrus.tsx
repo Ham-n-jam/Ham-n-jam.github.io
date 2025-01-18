@@ -1,5 +1,5 @@
 import ProjectSummary from "../ProjectSummary/ProjectSummary";
-import styles from "../../MainPage.module.css";
+import styles from "../../MainPage.module.scss";
 import {FaGithub} from "react-icons/fa";
 import Button from "../../../Global/Button";
 import TechSkill from "../../../Global/TechSkill/TechSkill";

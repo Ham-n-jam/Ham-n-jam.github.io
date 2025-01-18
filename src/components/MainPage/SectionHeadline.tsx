@@ -1,4 +1,4 @@
-import styles from "./SectionHeadline.module.css";
+import styles from "./SectionHeadline.module.scss";
 
 interface SectionHeadlineProps {
     id: string,

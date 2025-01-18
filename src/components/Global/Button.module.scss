@@ -1,0 +1,67 @@
+@import '../../ThemePalette.scss';
+
+.button {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 120px;
+    width: 180px;
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px $ab-color-button-base-box-shadow;
+    transition: 0.2s;
+    font-size: 1.1rem;
+}
+
+.white {
+    color: $ab-color-button-sidenav-contrast-text;
+    background-color: $ab-color-button-sidenav-contrast-bg;
+}
+
+.white:hover {
+    background-color: $ab-color-button-sidenav-contrast-bg-hover;
+}
+
+.white:active {
+    background-color: $ab-color-button-sidenav-contrast-bg-active;
+}
+
+
+.animated {
+    color: $ab-color-button-primary-text;
+    background-color: $ab-color-button-primary-bg;
+    background-size: 400% 400%;
+    animation: primary-pulse 6s ease infinite;
+}
+
+.animated:hover {
+    background-color: $ab-color-button-primary-bg-hover;
+    animation: none;
+}
+
+.animated:active {
+    background-color: $ab-color-button-primary-bg-active;
+}
+
+.button:active {
+    transform: scale(0.9, 0.9);
+}
+
+@keyframes primary-pulse {
+    0%, 100% {
+      background-color: $ab-color-primary;
+    }
+    50% {
+      background-color: $ab-color-primary-hue-shifted;
+    }
+}
+
+@media all and (max-width: 1099px) {
+    .button {
+        font-size: 1.0rem;
+        padding: 0.4rem;
+    }
+}

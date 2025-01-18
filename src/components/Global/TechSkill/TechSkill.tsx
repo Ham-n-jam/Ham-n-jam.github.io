@@ -1,4 +1,4 @@
-import styles from "./TechSkill.module.css";
+import styles from "./TechSkill.module.scss";
 import React, {ReactElement} from "react";
 
 interface TechSkillProps {

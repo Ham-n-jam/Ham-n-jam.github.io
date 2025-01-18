@@ -1,5 +1,5 @@
 import ProjectSummary from "../ProjectSummary/ProjectSummary";
-import styles from "../../MainPage.module.css";
+import styles from "../../MainPage.module.scss";
 import {FaTwitter} from "react-icons/fa";
 import TechSkill from "../../../Global/TechSkill/TechSkill";
 import {SiAseprite, SiGodotengine} from "react-icons/si";

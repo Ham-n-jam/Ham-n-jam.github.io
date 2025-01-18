@@ -1,4 +1,4 @@
-import styles from "./NavMenu.module.css";
+import styles from "./NavMenu.module.scss";
 import ScrollToMenuItem from "./ScrollToMenuItem";
 
 export default function NavMenu() {

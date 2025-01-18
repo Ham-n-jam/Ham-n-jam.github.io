@@ -1,11 +1,11 @@
-import styles from "./SideBar.module.css";
+import styles from "./SideBar.module.scss";
 import {MdEmail} from "react-icons/md";
 import {MdPhone} from "react-icons/md";
 import {FaGithub} from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
 import Button from "../Global/Button";
 
-import "../../GlobalStyles.css"
+import "../../GlobalStyles.scss"
 import NavMenu from "./NavMenu/NavMenu";
 
 export default function SideBar() {

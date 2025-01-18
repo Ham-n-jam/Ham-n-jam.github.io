@@ -1,0 +1,26 @@
+@import '../../../ThemePalette.scss';
+
+.wrapper {
+    padding: 10px;
+    color: $ab-color-text-primary-dark-bg;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.wrapper:hover {
+    background: $ab-color-primary-dark;
+}
+
+.wrapper:active {
+    background: $ab-color-primary;
+}
+
+.lineSeparator {
+    height: 1px;
+    width: 60%;
+    background: $ab-color-line-separator-dark-bg;
+}
+
+.a {
+    text-decoration: none;
+}

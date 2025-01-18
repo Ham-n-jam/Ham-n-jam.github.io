@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import styles from "./ProjectSummary.module.css";
+import styles from "./ProjectSummary.module.scss";
 import ImageGallery from 'react-image-gallery';
 
 interface ProjectSummaryProps {
