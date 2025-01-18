@@ -1,25 +1,26 @@
-$color-primary: #3c9ae7;
+@import "./ColorConsts.scss";
 
 $ab-color-body-bg: var(--ab-color-body-bg, #fff);
-$ab-color-body-bg-contrast: var(--ab-color-body-bg-contrast, #000);
-$ab-color-sidenav-bg: linear-gradient(225deg, #000000 0%, #222222 100%);
+$ab-color-body-bg-contrast: var(--ab-color-body-bg-contrast, #222222);
+$ab-color-sidenav-bg: var(--ab-color-sidenav-bg, #222222);
+$ab-color-elevation-box-shadow: var(--ab-color-elevation-box-shadow, #22222225);
 
+$ab-color-primary: var(--ab-color-primary, $color-primary);
 $ab-color-primary-light: var(
   --ab-color-primary-light,
-  color-mix(in srgb, $color-primary 80%, white)
+  color-mix(in srgb, $ab-color-primary 80%, white)
 );
-$ab-color-primary: var(--ab-color-primary, $color-primary);
 $ab-color-primary-medium: var(
   --ab-color-primary-medium,
-  color-mix(in srgb, $color-primary 80%, black)
+  color-mix(in srgb, $ab-color-primary 80%, black)
 );
 $ab-color-primary-dark: var(
   --ab-color-primary-dark,
-  color-mix(in srgb, $color-primary 60%, black)
+  color-mix(in srgb, $ab-color-primary 60%, black)
 );
 $ab-color-primary-hue-shifted: var(--ab-color-primary-hue-shifted, #2a5aca);
 
-$ab-color-text-primary-light-bg: var(--ab-color-text-primary-light-bg, black);
+$ab-color-text-primary-light-bg: var(--ab-color-text-primary-light-bg, #222222);
 $ab-color-text-secondary-light-bg: var(
   --ab-color-text-secondary-light-bg,
   #6a6a6a
@@ -41,12 +42,13 @@ $ab-color-button-primary-bg: linear-gradient(
 );
 $ab-color-button-primary-bg-hover: $ab-color-primary-medium;
 $ab-color-button-primary-bg-active: $ab-color-primary-dark;
-$ab-color-button-sidenav-contrast-text: #000;
+$ab-color-button-sidenav-contrast-text: #222222;
 $ab-color-button-sidenav-contrast-bg: #fff;
 $ab-color-button-sidenav-contrast-bg-hover: $ab-color-primary-light;
 $ab-color-button-sidenav-contrast-bg-active: $ab-color-primary;
 
-$ab-color-pill-light-bg: #9a9a9a;
+$ab-color-pill-light-bg: #0000005f;
+$ab-color-pill-light-text: $ab-color-text-primary-dark-bg;
 
-$ab-color-line-separator: lightgray;
-$ab-color-line-separator-dark-bg: gray;
+$ab-color-line-separator: color-mix(in srgb, black 30%, transparent);
+$ab-color-line-separator-dark-bg: color-mix(in srgb, white 30%, transparent);

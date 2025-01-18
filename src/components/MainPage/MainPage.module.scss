@@ -1,4 +1,4 @@
-@import "../../ThemePalette.scss";
+@import "../../ColorPalette.scss";
 
 .table {
   text-align: left;
@@ -101,12 +101,15 @@ h6 {
   max-height: 1000px;
   background-repeat: no-repeat;
   background-size: auto 100%;
+  background-blend-mode: multiply;
+  background-color: $ab-color-body-bg;
   position: absolute;
-  perspective: 60px;
 }
 
 .imageBg {
   background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: $ab-color-body-bg;
 }
 
 .pairContainer {
@@ -130,6 +133,10 @@ h6 {
 
 .whiteLink:hover {
   text-decoration: underline;
+}
+
+.whiteLink:focus {
+  color: $ab-color-primary-dark;
 }
 
 .buttonLink {

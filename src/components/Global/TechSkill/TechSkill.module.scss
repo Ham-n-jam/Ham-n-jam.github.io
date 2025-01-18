@@ -1,4 +1,4 @@
-@import "../../../ThemePalette.scss";
+@import "../../../ColorPalette.scss";
 
 .wrapper {
   padding-right: 0.6rem;
@@ -11,7 +11,7 @@
   padding: 0.4rem 0.8rem 0.4rem 0.6rem;
   background: color-mix(in srgb, $ab-color-body-bg 30%, transparent);
   border-radius: 4px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 26px $ab-color-elevation-box-shadow;
   backdrop-filter: blur(14.5px);
   -webkit-backdrop-filter: blur(14.5px);
 }

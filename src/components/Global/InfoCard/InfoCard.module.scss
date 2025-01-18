@@ -1,4 +1,4 @@
-@import "../../../ThemePalette.scss";
+@import "../../../ColorPalette.scss";
 
 .wrapper {
   width: 300px;
@@ -12,8 +12,7 @@
   padding: 0.8rem;
   background: $ab-color-body-bg;
   border-radius: 4px;
-  box-shadow: 0 4px 30px
-    color-mix(in srgb, $ab-color-body-bg-contrast 15%, transparent);
+  box-shadow: 0 4px 30px $ab-color-elevation-box-shadow;
 }
 
 .title {

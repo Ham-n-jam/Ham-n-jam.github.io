@@ -16,10 +16,13 @@ html {
 
 ::-webkit-scrollbar {
   width: var(--scrollBarWidth);
-  border-radius: 1ex;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #323232;
+  background: var(--ab-color-text-primary-light-bg, #222);
   border-radius: 1ex;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ab-color-body-bg);
 }
