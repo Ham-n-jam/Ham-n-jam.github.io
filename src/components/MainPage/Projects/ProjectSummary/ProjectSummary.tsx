@@ -70,15 +70,13 @@ export default function ProjectSummary({
     if (!containerRefCurrent) {
       return;
     }
-    const onIntersection = () => {
-      document.body.className = themeClassname ?? "";
-    };
-    const options: IntersectionObserverInit = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.9,
-    };
-    const observer = new IntersectionObserver(onIntersection, options);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting)
+          document.body.className = themeClassname ?? "";
+      },
+      { rootMargin: "-15% 0%", threshold: 0.5 }
+    );
     observer.observe(containerRefCurrent);
 
     return () => {

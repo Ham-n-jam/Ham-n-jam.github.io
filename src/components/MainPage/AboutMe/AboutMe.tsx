@@ -59,15 +59,15 @@ export default function AboutMe() {
     if (!containerRefCurrent) {
       return;
     }
-    const onIntersection = () => {
-      document.body.className = "";
-    };
-    const options: IntersectionObserverInit = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.9,
-    };
-    const observer = new IntersectionObserver(onIntersection, options);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) document.body.className = "";
+      },
+      {
+        rootMargin: "-20% 0%",
+        threshold: 0.2,
+      }
+    );
     observer.observe(containerRefCurrent);
 
     return () => {
