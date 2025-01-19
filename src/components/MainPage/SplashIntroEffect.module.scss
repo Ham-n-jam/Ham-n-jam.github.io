@@ -14,7 +14,7 @@
   background-color: $ab-color-body-bg;
   overflow-x: hidden;
   transition: 0.5s;
-  animation: fade-to-transparent-black 2s linear forwards;
+  animation: fade-to-transparent 2s linear forwards;
 }
 
 .inner {
@@ -25,48 +25,20 @@
 }
 
 .text {
-  animation: slideInOut 1.8s forwards;
+  animation: slide-in-out 1.8s forwards;
   animation-delay: 0.1s;
   color: $ab-color-text-primary-light-bg;
   opacity: 0;
 }
 
 .subheader {
-  animation: slideInOutBlue 1.8s forwards;
+  animation: slide-in-out 1.8s forwards;
   animation-delay: 0.15s;
-  color: $ab-color-primary;
+  color: $ab-color-link-button-primary;
   opacity: 0;
 }
 
-@keyframes slideInOut {
-  0% {
-    opacity: 0;
-    transform: translateX(10px);
-    color: $ab-color-text-primary-light-bg;
-  }
-
-  15% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  65% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  75% {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(-10px);
-    display: none;
-  }
-}
-
-@keyframes slideInOutBlue {
+@keyframes slide-in-out {
   0% {
     opacity: 0;
     transform: translateX(10px);
@@ -93,14 +65,14 @@
   }
 }
 
-@keyframes fade-to-transparent-black {
+@keyframes fade-to-transparent {
   0% {
-    background: $ab-color-body-bg;
+    opacity: 1;
   }
   80% {
-    background: $ab-color-body-bg;
+    opacity: 1;
   }
   100% {
-    background: transparent;
+    opacity: 0;
   }
 }
