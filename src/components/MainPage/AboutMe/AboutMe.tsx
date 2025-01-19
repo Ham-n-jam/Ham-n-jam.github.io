@@ -79,6 +79,7 @@ export default function AboutMe() {
 
   return (
     <div className={styles.paragraph} ref={containerRef}>
+      <h2>Software Engineer</h2>
       <p className={styles.infoParagraph}>
         I'm a dedicated and motivated software engineer, passionate about
         software development and design. I love learning new things and diving

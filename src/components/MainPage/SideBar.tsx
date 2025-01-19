@@ -14,7 +14,7 @@ export default function SideBar() {
       <div className={styles.navbar}>
         <div className={styles.wrapper}>
           <img
-            className={`${styles.pfp} ${styles.onlyOnMobile}`}
+            className={styles.pfp}
             src={`${process.env.PUBLIC_URL}/images/profilePhoto.png`}
             alt={"Profile"}
           />

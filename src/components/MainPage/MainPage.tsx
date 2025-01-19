@@ -44,7 +44,7 @@ export default function MainPage() {
       </div>
 
       <div className={styles.body}>
-        <SectionHeadline id="about" title="SOFTWARE ENGINEER " />
+        <SectionHeadline id="about" title="ALEX BELL" />
         <div className={styles.content}>
           <AboutMe />
           <p />

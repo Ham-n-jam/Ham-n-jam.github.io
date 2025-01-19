@@ -12,8 +12,12 @@
   padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0px 2px 3px $ab-color-button-base-box-shadow;
-  transition: 0.2s;
+  transition: background-color 0.4s, transform 0.1s;
   font-size: 1.1rem;
+
+  &:active {
+    transform: scale(0.9, 0.9);
+  }
 }
 
 .white {
@@ -33,7 +37,7 @@
   color: $ab-color-button-primary-text;
   background-color: $ab-color-button-primary-bg;
   background-size: 400% 400%;
-  animation: primary-pulse 6s ease infinite;
+  animation: primary-pulse 4s ease infinite;
 }
 
 .animated:hover {
@@ -45,17 +49,13 @@
   background-color: $ab-color-button-primary-bg-active;
 }
 
-.button:active {
-  transform: scale(0.9, 0.9);
-}
-
 @keyframes primary-pulse {
   0%,
   100% {
-    background-color: $ab-color-button-primary-bg;
+    filter: hue-rotate(-10deg);
   }
   50% {
-    background-color: $ab-color-button-primary-bg-hue-shifted;
+    filter: hue-rotate(10deg);
   }
 }
 
