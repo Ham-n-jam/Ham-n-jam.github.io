@@ -36,7 +36,7 @@ export default function Tetrus() {
       links={[
         <a
           className={styles.buttonLink}
-          href={"https://ham-n-jam.github.io/tetrus-game/"}
+          href={"https://brickahax.github.io/tetrus-game/"}
         >
           <Button text={"Play Tetrus"} color={"animated"} />
         </a>,

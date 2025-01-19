@@ -33,8 +33,8 @@ export default function SideBar() {
                 </a>
               </div>
               <div>
-                <a className={styles.link} href="https://github.com/Ham-n-jam">
-                  <FaGithub className={"icon"} /> Ham-n-jam
+                <a className={styles.link} href="https://github.com/brickahax">
+                  <FaGithub className={"icon"} /> brickahax
                 </a>
               </div>
             </div>

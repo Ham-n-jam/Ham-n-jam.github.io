@@ -30,7 +30,7 @@ export default function IncomeTicker() {
       links={[
         <a
           className={styles.buttonLink}
-          href={"https://ham-n-jam.github.io/income-ticker/#/"}
+          href={"https://brickahax.github.io/income-ticker/#/"}
         >
           <Button text={"Check it out"} color={"animated"} />
         </a>,

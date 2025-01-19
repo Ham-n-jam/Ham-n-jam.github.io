@@ -127,7 +127,7 @@ export default function AboutMe() {
               <div className={styles.flexBox}>
                 <InfoCard
                   title="Software Engineer"
-                  subTitle="June 2023 - Present"
+                  subTitle="July 2023 - Present"
                   location="Renewtrak"
                 />
                 <InfoCard
