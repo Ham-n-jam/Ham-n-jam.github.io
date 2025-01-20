@@ -178,8 +178,8 @@ export default function AboutMe() {
             <td>
               <div className={styles.mobileOnlyHeader}>{hobbiesHeader}</div>
               <p className={styles.infoParagraph}>
-                Cycling, Skiing, Digital Art and Animation, Sketching, Gaming,
-                Game Design, Swimming and Video Editing.
+                Cycling, Art and Animation, Game Design, Skateboarding, Riichi
+                Mahjong
               </p>
             </td>
           </tr>

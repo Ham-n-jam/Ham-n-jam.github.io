@@ -12,7 +12,8 @@ export default function IncomeTicker() {
       description={
         <>
           <p>
-            A joke app I made that you can put on in the background at work.
+            A joke app I made for a friend that you can put on in the background
+            at work.
           </p>
           <p>
             Input your income rate and watch your total for the day slowly tick
