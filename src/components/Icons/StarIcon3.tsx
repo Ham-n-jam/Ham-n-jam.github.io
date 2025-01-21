@@ -1,6 +1,6 @@
 import styles from "./StarIcon.module.scss";
 
-export default function StarIcon2() {
+export default function StarIcon3() {
   return (
     <div className={styles.starIconWrapper}>
       <svg
@@ -19,6 +19,43 @@ export default function StarIcon2() {
         </defs>
         <g>
           <title>Layer 1</title>
+          <ellipse
+            stroke="#00ff00"
+            stroke-opacity="0.1"
+            fill="none"
+            stroke-width="30"
+            cx="171.24239"
+            cy="192.6222"
+            id="svg_9"
+            rx="117.99999"
+            ry="117.99999"
+            filter="url(#svg_5_blur)"
+          />
+          <ellipse
+            stroke-opacity="0.1"
+            fill="#ffffff"
+            stroke="#ff0000"
+            stroke-width="30"
+            fill-opacity="0"
+            cx="171.24239"
+            cy="191.57675"
+            id="svg_8"
+            rx="148"
+            ry="148"
+            filter="url(#svg_5_blur)"
+          />
+          <ellipse
+            stroke="#007fff"
+            stroke-opacity="0.1"
+            fill="none"
+            stroke-width="30"
+            cx="170.69694"
+            cy="193.07673"
+            id="svg_10"
+            rx="88.30302"
+            ry="88.30302"
+            filter="url(#svg_5_blur)"
+          />
           <ellipse
             className={styles.textColor}
             stroke="#000"

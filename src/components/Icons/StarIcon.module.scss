@@ -1,9 +1,31 @@
 @import "../../ColorPalette.scss";
 
+.starIconWrapper {
+  position: fixed;
+}
+
 .starIcon {
   position: fixed;
+  animation: expand 190ms;
+  animation-timing-function: steps(8, end);
+  opacity: 0;
 }
 
 .textColor {
   fill: $ab-color-text-primary-light-bg;
+  stroke: $ab-color-text-primary-light-bg;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(calc(var(--ab-scale-factor, 1) * 5));
+    opacity: 0;
+  }
 }

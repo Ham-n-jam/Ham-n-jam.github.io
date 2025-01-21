@@ -1,5 +1,8 @@
 @import "../../ColorPalette.scss";
 
+$base-animation-delay-offset: 0.4s;
+$text-shine-in: text-shine-in 2s linear forwards;
+
 .screen {
   height: 100%;
   width: 100%;
@@ -13,10 +16,11 @@
   top: 0;
   background-color: $ab-color-body-bg;
   overflow-x: hidden;
-  transition: 0.5s;
-  // animation: fade-to-transparent 2.5s linear forwards;
+  transition: $base-animation-delay-offset;
+  animation: fade-to-transparent 2.5s linear forwards;
+  animation-delay: $base-animation-delay-offset;
   letter-spacing: -0.3vmin;
-  text-shadow: 0px 0px 30px black;
+  text-shadow: 0px 0px 30px $ab-color-text-primary-light-bg;
 
   h1 {
     font-family: "Eva-Matisse_Classic";
@@ -35,7 +39,6 @@
   justify-content: space-between;
   color: $ab-color-text-primary-light-bg;
   font-size: 6vmin;
-  // animation: text-shine-in 2.5s linear forwards;
 }
 
 .titleWrapper {
@@ -45,11 +48,12 @@
 }
 
 .headerText {
-  // animation: slide-in-out 1.8s forwards;
   animation-delay: 0.1s;
   margin: 0;
   line-height: 0.9em;
-  // opacity: 0;
+  animation: $text-shine-in;
+  animation-delay: $base-animation-delay-offset;
+  opacity: 0;
 }
 
 .headerSmall {
@@ -61,19 +65,101 @@
 }
 
 .subheader {
-  // animation: slide-in-out 1.8s forwards;
   animation-delay: 0.15s;
   font-size: 4vmin;
-  // margin: 0;
-
-  // opacity: 0;
+  animation: $text-shine-in;
+  animation-delay: $base-animation-delay-offset;
+  opacity: 0;
 }
 
 .title {
-  // animation: slide-in-out 1.8s forwards;
   animation-delay: 0.15s;
   font-size: 6vmin;
-  // opacity: 0;
+  animation: $text-shine-in;
+  animation-delay: $base-animation-delay-offset;
+  opacity: 0;
+}
+
+.starContainer > *,
+starContainerRight > * {
+  position: fixed;
+}
+
+.starContainer {
+  div:nth-child(1) {
+    transform: translate(26vmin, 8vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.01s);
+      --ab-scale-factor: 2;
+    }
+  }
+  div:nth-child(2) {
+    transform: translate(0.1vmin, 0.1vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.12s);
+      --ab-scale-factor: 0.3;
+    }
+  }
+  div:nth-child(3) {
+    transform: translate(-10vmin, -40vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.24s);
+      --ab-scale-factor: 0.8;
+    }
+  }
+  div:nth-child(4) {
+    transform: translate(10vmin, -10vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.32s);
+      --ab-scale-factor: 0.4;
+    }
+  }
+  div:nth-child(5) {
+    transform: translate(-16vmin, -2vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.38s);
+      --ab-scale-factor: 0.1;
+    }
+  }
+
+  div:nth-child(6) {
+    transform: translate(16vmin, -23vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.48s);
+      --ab-scale-factor: 0.3;
+    }
+  }
+}
+
+.starContainerRight {
+  div:nth-child(1) {
+    transform: translate(-60vmin, -28vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.1s);
+      --ab-scale-factor: 0.3;
+    }
+  }
+  div:nth-child(2) {
+    transform: translate(-10vmin, -15vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.18s);
+      --ab-scale-factor: 0.2;
+    }
+  }
+  div:nth-child(3) {
+    transform: translate(-10vmin, -40vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.26s);
+      --ab-scale-factor: 0.9;
+    }
+  }
+  div:nth-child(4) {
+    transform: translate(-45vmin, -29vmin);
+    svg {
+      animation-delay: calc($base-animation-delay-offset + 0.44s);
+      --ab-scale-factor: 0.2;
+    }
+  }
 }
 
 @keyframes text-shine-in {
@@ -81,19 +167,20 @@
     text-shadow: 0px 0px 30px $ab-color-text-primary-light-bg;
     opacity: 0;
   }
-  19.999% {
+  20% {
     opacity: 0;
   }
-  20% {
+  25% {
     text-shadow: 0px 0px 30px $ab-color-text-primary-light-bg;
     opacity: 1;
   }
-  35% {
+  30% {
     text-shadow: 0px 0px 0px $ab-color-text-primary-light-bg;
   }
   80% {
   }
   100% {
+    opacity: 1;
     text-shadow: 0px 0px 0px $ab-color-text-primary-light-bg;
   }
 }
