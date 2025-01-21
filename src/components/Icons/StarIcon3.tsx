@@ -11,10 +11,10 @@ export default function StarIcon3() {
       >
         <defs>
           <filter id="svg_2_blur">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="2.4" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
           </filter>
           <filter id="svg_3_blur" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="3.1" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
           </filter>
         </defs>
         <g>

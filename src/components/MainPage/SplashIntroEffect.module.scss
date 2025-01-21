@@ -163,14 +163,14 @@ $text-shine-in: text-shine-in 2s linear forwards;
 
 @keyframes text-shine-in {
   0% {
-    text-shadow: 0px 0px 30px $ab-color-text-primary-dark-bg;
+    text-shadow: 0px 0px 24px $ab-color-text-primary-dark-bg;
     opacity: 0;
   }
   20% {
     opacity: 0;
   }
   25% {
-    text-shadow: 0px 0px 30px $ab-color-text-primary-dark-bg;
+    text-shadow: 0px 0px 24px $ab-color-text-primary-dark-bg;
     opacity: 1;
   }
   30% {
