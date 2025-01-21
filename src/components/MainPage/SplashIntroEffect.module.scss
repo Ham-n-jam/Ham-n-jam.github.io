@@ -3,6 +3,11 @@
 $base-animation-delay-offset: 0.4s;
 $text-shine-in: text-shine-in 2s linear forwards;
 
+@font-face {
+  font-family: "EvaMatisseClassic";
+  src: url("../../fonts/evaMatisseClassic.woff2") format("woff2");
+}
+
 .screen {
   height: 100%;
   width: 100%;
@@ -22,7 +27,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
   letter-spacing: -0.3vmin;
 
   h1 {
-    font-family: "Eva-Matisse_Classic";
+    font-family: "EvaMatisseClassic";
   }
 
   h2 {

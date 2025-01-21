@@ -31,7 +31,7 @@ export default function ProjectSummary({
           <div className={styles.subTitle}>{release}</div>
         </div>
       </h2>
-      <p className={styles.description}>{description}</p>
+      <div className={styles.description}>{description}</div>
       <div>
         {links.map((link, idx) => {
           return (

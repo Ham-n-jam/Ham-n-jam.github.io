@@ -35,8 +35,8 @@ export default function StarIcon1() {
           <ellipse
             className={styles.textColor}
             stroke="#000"
-            stroke-width="13"
-            fill-opacity="0"
+            strokeWidth="13"
+            fillOpacity="0"
             cx="176.90908"
             cy="184.21817"
             id="svg_5"

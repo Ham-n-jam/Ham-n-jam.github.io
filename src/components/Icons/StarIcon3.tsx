@@ -21,9 +21,9 @@ export default function StarIcon3() {
           <title>Layer 1</title>
           <ellipse
             stroke="#00ff00"
-            stroke-opacity="0.1"
+            strokeOpacity="0.1"
             fill="none"
-            stroke-width="30"
+            strokeWidth="30"
             cx="171.24239"
             cy="192.6222"
             id="svg_9"
@@ -32,11 +32,11 @@ export default function StarIcon3() {
             filter="url(#svg_5_blur)"
           />
           <ellipse
-            stroke-opacity="0.1"
+            strokeOpacity="0.1"
             fill="#ffffff"
             stroke="#ff0000"
-            stroke-width="30"
-            fill-opacity="0"
+            strokeWidth="30"
+            fillOpacity="0"
             cx="171.24239"
             cy="191.57675"
             id="svg_8"
@@ -46,9 +46,9 @@ export default function StarIcon3() {
           />
           <ellipse
             stroke="#007fff"
-            stroke-opacity="0.1"
+            strokeOpacity="0.1"
             fill="none"
-            stroke-width="30"
+            strokeWidth="30"
             cx="170.69694"
             cy="193.07673"
             id="svg_10"
