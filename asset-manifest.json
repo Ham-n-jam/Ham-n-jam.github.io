@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c170a547.chunk.css",
-    "main.js": "/static/js/main.ab4bf906.chunk.js",
-    "main.js.map": "/static/js/main.ab4bf906.chunk.js.map",
+    "main.css": "/static/css/main.a3b66508.chunk.css",
+    "main.js": "/static/js/main.e9944f49.chunk.js",
+    "main.js.map": "/static/js/main.e9944f49.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.55ad32df.js",
     "runtime-main.js.map": "/static/js/runtime-main.55ad32df.js.map",
     "static/css/2.07de0c8d.chunk.css": "/static/css/2.07de0c8d.chunk.css",
@@ -12,15 +12,15 @@
     "static/js/3.3ca7360a.chunk.js.map": "/static/js/3.3ca7360a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.07de0c8d.chunk.css.map": "/static/css/2.07de0c8d.chunk.css.map",
-    "static/css/main.c170a547.chunk.css.map": "/static/css/main.c170a547.chunk.css.map",
+    "static/css/main.a3b66508.chunk.css.map": "/static/css/main.a3b66508.chunk.css.map",
     "static/js/2.0e8d6179.chunk.js.LICENSE.txt": "/static/js/2.0e8d6179.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/EVA-Matisse_Classic.6ac0acb8.ttf"
+    "static/media/SplashIntroEffect.module.scss": "/static/media/evaMatisseClassic.3cdb3253.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.55ad32df.js",
     "static/css/2.07de0c8d.chunk.css",
     "static/js/2.0e8d6179.chunk.js",
-    "static/css/main.c170a547.chunk.css",
-    "static/js/main.ab4bf906.chunk.js"
+    "static/css/main.a3b66508.chunk.css",
+    "static/js/main.e9944f49.chunk.js"
   ]
 }
