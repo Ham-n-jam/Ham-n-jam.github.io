@@ -14,54 +14,87 @@
   background-color: $ab-color-body-bg;
   overflow-x: hidden;
   transition: 0.5s;
-  animation: fade-to-transparent 2s linear forwards;
+  // animation: fade-to-transparent 2.5s linear forwards;
+  letter-spacing: -0.3vmin;
+  text-shadow: 0px 0px 30px black;
+
+  h1 {
+    font-family: "Eva-Matisse_Classic";
+  }
+
+  h2 {
+    font-family: "Arial", sans-serif;
+  }
 }
 
-.inner {
+.textWrapper {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $ab-color-text-primary-light-bg;
+  font-size: 6vmin;
+  // animation: text-shine-in 2.5s linear forwards;
+}
+
+.titleWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.text {
-  animation: slide-in-out 1.8s forwards;
+.headerText {
+  // animation: slide-in-out 1.8s forwards;
   animation-delay: 0.1s;
-  color: $ab-color-text-primary-light-bg;
-  opacity: 0;
+  margin: 0;
+  line-height: 0.9em;
+  // opacity: 0;
+}
+
+.headerSmall {
+  font-size: 6vmin;
+}
+
+.headerLarge {
+  font-size: 16vmin;
 }
 
 .subheader {
-  animation: slide-in-out 1.8s forwards;
+  // animation: slide-in-out 1.8s forwards;
   animation-delay: 0.15s;
-  color: $ab-color-link-button-primary;
-  opacity: 0;
+  font-size: 4vmin;
+  // margin: 0;
+
+  // opacity: 0;
 }
 
-@keyframes slide-in-out {
+.title {
+  // animation: slide-in-out 1.8s forwards;
+  animation-delay: 0.15s;
+  font-size: 6vmin;
+  // opacity: 0;
+}
+
+@keyframes text-shine-in {
   0% {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-
-  15% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  65% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  75% {
-    transform: translateX(-10px);
+    text-shadow: 0px 0px 30px $ab-color-text-primary-light-bg;
     opacity: 0;
   }
-
+  19.999% {
+    opacity: 0;
+  }
+  20% {
+    text-shadow: 0px 0px 30px $ab-color-text-primary-light-bg;
+    opacity: 1;
+  }
+  35% {
+    text-shadow: 0px 0px 0px $ab-color-text-primary-light-bg;
+  }
+  80% {
+  }
   100% {
-    transform: translateX(-10px);
-    display: none;
+    text-shadow: 0px 0px 0px $ab-color-text-primary-light-bg;
   }
 }
 
@@ -74,5 +107,6 @@
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }

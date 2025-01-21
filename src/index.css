@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Eva-Matisse_Classic";
+  src: URL("./fonts/EVA-Matisse_Classic.ttf") format("truetype");
+  font-display: block;
+}
+
 body {
   --sideBarWidth: 360px;
   --sideBarHeight: 275px;
