@@ -17,7 +17,7 @@ export default function SplashIntroEffect() {
       document.documentElement.style.removeProperty(
         "--ab-webkit-scrollbar-track-bg-color"
       );
-    }, 2900);
+    }, 3500);
   }, []);
 
   return (

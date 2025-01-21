@@ -22,7 +22,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
   background-color: $ab-color-sidenav-bg;
   overflow-x: hidden;
   transition: $base-animation-delay-offset;
-  animation: fade-to-transparent 2.5s linear forwards;
+  animation: fade-to-transparent 3s linear forwards;
   animation-delay: $base-animation-delay-offset;
   letter-spacing: -0.3vmin;
 
@@ -188,7 +188,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
   0% {
     opacity: 1;
   }
-  80% {
+  90% {
     opacity: 1;
   }
   100% {
