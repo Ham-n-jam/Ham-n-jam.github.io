@@ -6,10 +6,17 @@ import StarIcon3 from "../Icons/StarIcon3";
 
 export default function SplashIntroEffect() {
   const [style, setStyle] = useState({});
+  document.documentElement.style.setProperty(
+    "--ab-webkit-scrollbar-track-bg-color",
+    "#222"
+  );
 
   useEffect(() => {
     setTimeout(function () {
       setStyle({ display: "none" });
+      document.documentElement.style.removeProperty(
+        "--ab-webkit-scrollbar-track-bg-color"
+      );
     }, 2900);
   }, []);
 

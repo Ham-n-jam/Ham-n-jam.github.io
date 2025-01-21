@@ -61,7 +61,7 @@ export default function AboutMe() {
     }
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry?.isIntersecting) document.body.className = "";
+        if (entry?.isIntersecting) document.documentElement.className = "";
       },
       {
         rootMargin: "-20% 0%",

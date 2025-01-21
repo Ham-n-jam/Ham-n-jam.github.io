@@ -73,7 +73,7 @@ export default function ProjectSummary({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting)
-          document.body.className = themeClassname ?? "";
+          document.documentElement.className = themeClassname ?? "";
       },
       { rootMargin: "-15% 0%", threshold: 0.5 }
     );
