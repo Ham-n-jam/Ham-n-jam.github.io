@@ -3,3 +3,9 @@
 .icon {
   margin-right: 10px;
 }
+
+@media all and (max-width: 1099px) {
+  .hideOnMobile {
+    display: none;
+  }
+}

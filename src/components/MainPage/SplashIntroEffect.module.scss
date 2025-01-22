@@ -1,4 +1,5 @@
 @import "../../ColorPalette.scss";
+@import "../../GlobalStyles.scss";
 
 $base-animation-delay-offset: 0.4s;
 $text-shine-in: text-shine-in 2s linear forwards;
@@ -86,6 +87,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
 
 .starContainer {
   div:nth-child(1) {
+    @extend .hideOnMobile;
     transform: translate(26vmin, 8vmin);
     svg {
       animation-delay: calc($base-animation-delay-offset + 0.01s);
@@ -107,6 +109,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
     }
   }
   div:nth-child(4) {
+    @extend .hideOnMobile;
     transform: translate(10vmin, -10vmin);
     svg {
       animation-delay: calc($base-animation-delay-offset + 0.32s);
@@ -120,14 +123,6 @@ $text-shine-in: text-shine-in 2s linear forwards;
       --ab-scale-factor: 0.1;
     }
   }
-
-  div:nth-child(6) {
-    transform: translate(16vmin, -23vmin);
-    svg {
-      animation-delay: calc($base-animation-delay-offset + 0.48s);
-      --ab-scale-factor: 0.3;
-    }
-  }
 }
 
 .starContainerRight {
@@ -139,6 +134,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
     }
   }
   div:nth-child(2) {
+    @extend .hideOnMobile;
     transform: translate(-10vmin, -15vmin);
     svg {
       animation-delay: calc($base-animation-delay-offset + 0.18s);
@@ -153,6 +149,7 @@ $text-shine-in: text-shine-in 2s linear forwards;
     }
   }
   div:nth-child(4) {
+    @extend .hideOnMobile;
     transform: translate(-45vmin, -29vmin);
     svg {
       animation-delay: calc($base-animation-delay-offset + 0.44s);

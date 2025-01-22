@@ -7,7 +7,7 @@
 .starIcon {
   position: fixed;
   animation: expand 190ms;
-  animation-timing-function: steps(8, end);
+  animation-timing-function: steps(12, end);
   opacity: 0;
 }
 
@@ -27,5 +27,6 @@
   100% {
     transform: scale(calc(var(--ab-scale-factor, 1) * 5));
     opacity: 0;
+    display: none;
   }
 }

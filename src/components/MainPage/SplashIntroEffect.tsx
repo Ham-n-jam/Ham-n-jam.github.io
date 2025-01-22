@@ -20,7 +20,6 @@ export default function SplashIntroEffect() {
             <StarIcon1 />
             <StarIcon2 />
             <StarIcon2 />
-            <StarIcon2 />
           </div>
           <h1 className={`${styles.headerText} ${styles.headerLarge}`}>BELL</h1>
           <h2 className={styles.subheader}>OCCUPATION:</h2>

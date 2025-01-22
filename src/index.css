@@ -1,8 +1,4 @@
 body {
-  --sideBarWidth: 360px;
-  --sideBarHeight: 275px;
-  --scrollBarWidth: 10px;
-
   margin: 0;
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,11 +6,15 @@ body {
 }
 
 html {
+  --sideBarWidth: 360px;
+  --sideBarHeight: 275px;
+  --scrollBarWidth: 10px;
+
   font-size: 1em;
   scroll-behavior: smooth;
 
   ::-webkit-scrollbar {
-    width: var(--scrollBarWidth);
+    width: var(--ab-scrollbar-width, var(--scrollBarWidth));
   }
 
   ::-webkit-scrollbar-thumb {
