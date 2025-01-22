@@ -5,12 +5,18 @@ import SplashIntroEffect from "./components/MainPage/SplashIntroEffect";
 
 function AppBase() {
   const [showSplashScreenFx, setShowSplashScreenFx] = useState(true);
-  document.documentElement.style.setProperty("--ab-scrollbar-width", "0px");
+  const scrollbarColorCssVar = "--ab-webkit-scrollbar-track-bg-color";
 
   useEffect(() => {
+    document.documentElement.style.setProperty(
+      scrollbarColorCssVar,
+      "var(--ab-color-sidenav-bg, #222222)"
+    );
+    setTimeout(function () {
+      document.documentElement.style.removeProperty(scrollbarColorCssVar);
+    }, 3200);
     setTimeout(function () {
       setShowSplashScreenFx(false);
-      document.documentElement.style.removeProperty("--ab-scrollbar-width");
     }, 3500);
   }, []);
 
