@@ -5,15 +5,11 @@ import SplashIntroEffect from "./components/MainPage/SplashIntroEffect";
 
 function AppBase() {
   const [showSplashScreenFx, setShowSplashScreenFx] = useState(true);
-  const scrollbarColorCssVar = "--ab-webkit-scrollbar-track-bg-color";
-
   useEffect(() => {
-    document.documentElement.style.setProperty(
-      scrollbarColorCssVar,
-      "var(--ab-color-sidenav-bg, #222222)"
-    );
     setTimeout(function () {
-      document.documentElement.style.removeProperty(scrollbarColorCssVar);
+      document.documentElement.style.removeProperty(
+        "--ab-webkit-scrollbar-track-bg-color"
+      );
     }, 3200);
     setTimeout(function () {
       setShowSplashScreenFx(false);
