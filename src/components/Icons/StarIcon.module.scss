@@ -25,7 +25,9 @@
     opacity: 1;
   }
   100% {
-    transform: scale(calc(var(--ab-scale-factor, 1) * 5));
+    transform: scale(
+      calc(var(--ab-scale-factor, 1) * var(--ab-viewport-scale-factor, 1) * 5)
+    );
     opacity: 0;
     display: none;
   }

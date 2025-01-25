@@ -37,6 +37,17 @@ $text-shine-in: text-shine-in 2s linear forwards;
   }
 }
 
+@media all and (max-width: 500px) {
+  .screen {
+    --ab-viewport-scale-factor: 0.4;
+  }
+}
+@media all and (max-width: 1099px) and (min-width: 501px) {
+  .screen {
+    --ab-viewport-scale-factor: 0.6;
+  }
+}
+
 .textWrapper {
   display: flex;
   width: 70%;
