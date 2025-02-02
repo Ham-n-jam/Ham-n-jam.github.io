@@ -9,17 +9,6 @@ export default function StarIcon1() {
         height="392"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs>
-          <filter id="svg_2_blur">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
-          </filter>
-          <filter id="svg_3_blur" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
-          </filter>
-          <filter id="svg_5_blur" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
-          </filter>
-        </defs>
         <g>
           <title>Layer 1</title>
           <ellipse
@@ -30,7 +19,6 @@ export default function StarIcon1() {
             id="svg_3"
             rx="27.36841"
             ry="27.36841"
-            filter="url(#svg_3_blur)"
           />
           <ellipse
             className={styles.textColor}
@@ -42,7 +30,6 @@ export default function StarIcon1() {
             id="svg_5"
             rx="148"
             ry="148"
-            filter="url(#svg_5_blur)"
           />
           <rect
             className={styles.textColor}
@@ -53,7 +40,6 @@ export default function StarIcon1() {
             id="svg_1"
             stroke="#000"
             rx="100"
-            filter="url(#svg_2_blur)"
             transform="rotate(33.6564 170.267 193.372)"
           />
           <rect
@@ -65,7 +51,6 @@ export default function StarIcon1() {
             id="svg_2"
             rx="100"
             stroke="#000"
-            filter="url(#svg_2_blur)"
             transform="rotate(-56 172.768 184.241)"
           />
         </g>
