@@ -15,7 +15,7 @@ export default function SideBar() {
         <div className={styles.wrapper}>
           <img
             className={styles.pfp}
-            src={`${process.env.PUBLIC_URL}/images/profilePhoto.png`}
+            src={`${process.env.PUBLIC_URL}/images/profilePhoto.webp`}
             alt={"Profile"}
           />
           <div className={styles.bg}>

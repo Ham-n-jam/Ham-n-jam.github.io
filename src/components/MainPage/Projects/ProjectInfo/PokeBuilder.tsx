@@ -31,11 +31,11 @@ export default function PokeBuilder() {
       }
       imageFolder={"pokebuilder"}
       imageNames={[
-        "pokeDex.png",
-        "pokeDetail.png",
-        "pokeBuilder.png",
-        "pokeTeams.png",
-        "pokeTeam.png",
+        "pokeDex.webp",
+        "pokeDetail.webp",
+        "pokeBuilder.webp",
+        "pokeTeams.webp",
+        "pokeTeam.webp",
       ]}
       links={[
         <a

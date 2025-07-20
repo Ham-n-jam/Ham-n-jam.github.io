@@ -27,7 +27,7 @@ export default function IncomeTicker() {
         </>
       }
       imageFolder={"income-ticker"}
-      imageNames={["incomeTicker.png", "incomeSetup.png"]}
+      imageNames={["incomeTicker.webp", "incomeSetup.webp"]}
       links={[
         <a
           className={styles.buttonLink}

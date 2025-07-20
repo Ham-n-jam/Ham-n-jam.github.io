@@ -14,19 +14,19 @@ export default function MainPage() {
   const allProjects = [
     {
       component: <Tetrus />,
-      bgImage: "tetrus/bg.png",
+      bgImage: "tetrus/bg.webp",
     },
     {
       component: <PokeBuilder />,
-      bgImage: "pokebuilder/bg.png",
+      bgImage: "pokebuilder/bg.webp",
     },
     {
       component: <IncomeTicker />,
-      bgImage: "income-ticker/bg.png",
+      bgImage: "income-ticker/bg.webp",
     },
     {
       component: <GoldenHourChronicles />,
-      bgImage: "ghc/bg.png",
+      bgImage: "ghc/bg.webp",
     },
   ];
 
@@ -37,7 +37,7 @@ export default function MainPage() {
           className={`${styles.splashImg} ${styles.hideOnMobile}`}
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "/images/splash.png"
+              process.env.PUBLIC_URL + "/images/splash.webp"
             })`,
           }}
         ></div>

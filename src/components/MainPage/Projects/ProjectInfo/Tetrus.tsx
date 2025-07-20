@@ -29,9 +29,9 @@ export default function Tetrus() {
       }
       imageFolder={"tetrus"}
       imageNames={[
-        "tetrusGameplay.png",
-        "tetrusMenu.png",
-        "tetrusGameOver.png",
+        "tetrusGameplay.webp",
+        "tetrusMenu.webp",
+        "tetrusGameOver.webp",
       ]}
       links={[
         <a

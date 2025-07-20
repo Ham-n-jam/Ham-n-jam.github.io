@@ -31,11 +31,11 @@ export default function GoldenHourChronicles() {
       }
       imageFolder={"ghc"}
       imageNames={[
-        "gameplay2024.png",
-        "snowArea2024.png",
-        "dialogue2024.png",
-        "loadGame2024.png",
-        "title2024.png",
+        "gameplay2024.webp",
+        "snowArea2024.webp",
+        "dialogue2024.webp",
+        "loadGame2024.webp",
+        "title2024.webp",
       ]}
       links={[
         <a
